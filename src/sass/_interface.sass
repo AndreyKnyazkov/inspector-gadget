@@ -6,6 +6,8 @@ a
   text-decoration: none
   &:visited
     color: #fff
+body
+  +Reg
 .container
   width: 1366px
   margin: auto
@@ -27,3 +29,51 @@ a
     width: 750px
     width: 85%
 
+.interface
+  &-logo
+    margin-right: 13px
+    &__title
+      +Bold
+      font-size: 24px
+      margin-top: -7px
+      letter-spacing: -0.9px
+    &__subtitle
+      +Reg
+      font-size: 14px
+      color: #9AA4B6
+      margin-top: 3px
+      letter-spacing: -0.45px
+  &-phone
+    +Bold
+    font-size: 24px
+    margin-left: 23px
+    letter-spacing: -0.8px
+  &-time
+    +Reg
+    font-size: 14px
+    color: #99A3B5
+    margin-top: 6px
+    letter-spacing: -0.4px
+  &-button
+    &__one
+  &-information
+    &__title
+      font-size: 14px
+      letter-spacing: -0.3px
+    &__subtitle
+      +Bold
+      font-size: 14px
+      color: #4B5DFF
+      text-decoration-line: underline
+      margin-top: 8px
+      letter-spacing: -0.3px
+  &-button
+    &__one
+      +Bold
+      font-size: 14px
+      padding: 17px 49px
+      letter-spacing: -0.4px
+      border: 1px solid #4B5DFF;
+      box-sizing: border-box
+      border-radius: 0px 30px 30px 30px
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

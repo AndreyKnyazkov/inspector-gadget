@@ -408,6 +408,11 @@ a:visited {
   color: #fff;
 }
 
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: normal;
+}
+
 .container {
   width: 1366px;
   margin: auto;
@@ -439,6 +444,74 @@ a:visited {
     width: 750px;
     width: 85%;
   }
+}
+
+.interface-logo {
+  margin-right: 13px;
+}
+
+.interface-logo__title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -7px;
+  letter-spacing: -0.9px;
+}
+
+.interface-logo__subtitle {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #9AA4B6;
+  margin-top: 3px;
+  letter-spacing: -0.45px;
+}
+
+.interface-phone {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 23px;
+  letter-spacing: -0.8px;
+}
+
+.interface-time {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #99A3B5;
+  margin-top: 6px;
+  letter-spacing: -0.4px;
+}
+
+.interface-information__title {
+  font-size: 14px;
+  letter-spacing: -0.3px;
+}
+
+.interface-information__subtitle {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4B5DFF;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 8px;
+  letter-spacing: -0.3px;
+}
+
+.interface-button__one {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 17px 49px;
+  letter-spacing: -0.4px;
+  border: 1px solid #4B5DFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 30px 30px 30px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 body.compensate-for-scrollbar {
@@ -1360,6 +1433,8 @@ body.compensate-for-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header-logo {
@@ -1375,6 +1450,15 @@ body.compensate-for-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header-information-block-1 {
+  width: 125px;
+  margin-right: 38px;
+}
+
+.header-information-block-2 {
+  width: 199px;
 }
 
 .header-information-block {
@@ -1404,5 +1488,9 @@ body.compensate-for-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-contact__socials-icons:not(:last-child) {
+  margin-right: 6px;
 }
 /*# sourceMappingURL=style.css.map */
