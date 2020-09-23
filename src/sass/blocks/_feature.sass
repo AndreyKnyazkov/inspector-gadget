@@ -1,0 +1,19 @@
+.feature
+  margin-top: 40px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-around
+    &__items
+      width: 155.8px
+      display: flex
+      line-height: 19px
+      &:not(:last-child)::after
+        position: absolute
+        content: url(../img/feature/line.svg)
+        transform: translate(184px, 4px)
+      &::before
+        position: absolute
+        content: url(../img/feature/star.svg)
+        transform: translate(-20px)
+        

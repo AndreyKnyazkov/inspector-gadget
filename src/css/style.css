@@ -1570,4 +1570,41 @@ body.compensate-for-scrollbar {
 .menu-block__item span {
   padding: 0px 8px 0px 8px;
 }
+
+.feature {
+  margin-top: 40px;
+}
+
+.feature-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.feature-block__items {
+  width: 155.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 19px;
+}
+
+.feature-block__items:not(:last-child)::after {
+  position: absolute;
+  content: url(../img/feature/line.svg);
+  -webkit-transform: translate(184px, 4px);
+          transform: translate(184px, 4px);
+}
+
+.feature-block__items::before {
+  position: absolute;
+  content: url(../img/feature/star.svg);
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+}
 /*# sourceMappingURL=style.css.map */
