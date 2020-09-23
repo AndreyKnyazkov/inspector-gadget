@@ -411,10 +411,11 @@ a:visited {
 body {
   font-family: 'Gilroy', sans-serif;
   font-weight: normal;
+  letter-spacing: -0.3px;
 }
 
 .container {
-  width: 1312px;
+  width: 1365px;
   margin: auto;
 }
 
@@ -446,6 +447,10 @@ body {
   }
 }
 
+.interface-title {
+  letter-spacing: 0.7px;
+}
+
 .interface-logo {
   margin-right: 13px;
 }
@@ -455,7 +460,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   margin-top: -7px;
-  letter-spacing: -0.9px;
 }
 
 .interface-logo__subtitle {
@@ -464,7 +468,6 @@ body {
   font-size: 14px;
   color: #9AA4B6;
   margin-top: 3px;
-  letter-spacing: -0.45px;
 }
 
 .interface-phone {
@@ -472,7 +475,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   margin-left: 23px;
-  letter-spacing: -0.8px;
 }
 
 .interface-time {
@@ -481,7 +483,6 @@ body {
   font-size: 14px;
   color: #99A3B5;
   margin-top: 6px;
-  letter-spacing: -0.4px;
 }
 
 .interface-information__title {
@@ -504,7 +505,7 @@ body {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   font-size: 14px;
-  padding: 17px 49px;
+  padding: 17px 57px;
   letter-spacing: -0.4px;
   border: 1px solid #4B5DFF;
   -webkit-box-sizing: border-box;
@@ -512,6 +513,16 @@ body {
   border-radius: 0px 30px 30px 30px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.interface-button__two {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  padding: 19px 32px;
+  border: 1px solid #FFFFFF;
+  border-radius: 0px 30px 30px 30px;
 }
 
 body.compensate-for-scrollbar {
@@ -1495,7 +1506,35 @@ body.compensate-for-scrollbar {
 }
 
 .header-contact__socials-icons:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 9px;
+}
+
+.hero {
+  background: url(../img/hero-cover.svg) no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.hero-block {
+  text-align: center;
+}
+
+.hero-block__title {
+  padding-top: 63px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+}
+
+.hero-block__subtitle {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hero-block__btn {
+  margin-top: 54px;
 }
 
 .menu {
