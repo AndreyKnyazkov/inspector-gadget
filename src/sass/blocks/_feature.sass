@@ -6,14 +6,15 @@
     justify-content: space-around
     &__items
       width: 155.8px
-      display: flex
       line-height: 19px
-      &:not(:last-child)::after
-        position: absolute
-        content: url(../img/feature/line.svg)
-        transform: translate(184px, 4px)
+      display: flex
       &::before
         position: absolute
         content: url(../img/feature/star.svg)
-        transform: translate(-20px)
+        transform: translate(-20px)    
+      &:not(:last-child)::after
+        position: absolute
+        content: url(../img/feature/line.svg)
+        transform: translate(200px, 4px)
+      
         

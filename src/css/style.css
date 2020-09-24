@@ -515,6 +515,10 @@ body {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.interface-button__one:visited {
+  color: #4B5DFF;
+}
+
 .interface-button__two {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
@@ -523,6 +527,10 @@ body {
   padding: 19px 32px;
   border: 1px solid #FFFFFF;
   border-radius: 0px 30px 30px 30px;
+}
+
+.interface-button__two:visited {
+  color: #fff;
 }
 
 body.compensate-for-scrollbar {
@@ -1588,17 +1596,10 @@ body.compensate-for-scrollbar {
 
 .feature-block__items {
   width: 155.8px;
+  line-height: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 19px;
-}
-
-.feature-block__items:not(:last-child)::after {
-  position: absolute;
-  content: url(../img/feature/line.svg);
-  -webkit-transform: translate(184px, 4px);
-          transform: translate(184px, 4px);
 }
 
 .feature-block__items::before {
@@ -1606,5 +1607,56 @@ body.compensate-for-scrollbar {
   content: url(../img/feature/star.svg);
   -webkit-transform: translate(-20px);
           transform: translate(-20px);
+}
+
+.feature-block__items:not(:last-child)::after {
+  position: absolute;
+  content: url(../img/feature/line.svg);
+  -webkit-transform: translate(200px, 4px);
+          transform: translate(200px, 4px);
+}
+
+.repair-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.repair-block__interface {
+  width: 445px;
+  height: 300px;
+  background: #F2F5F9;
+}
+
+.repair-block__interface:last-child {
+  margin-top: 14px;
+}
+
+.repair-block__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.repair-block__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.repair-block__three {
+  width: 445px;
+  height: 613px;
+  background: #F2F5F9;
 }
 /*# sourceMappingURL=style.css.map */
