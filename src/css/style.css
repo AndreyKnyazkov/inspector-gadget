@@ -419,6 +419,11 @@ body {
   margin: auto;
 }
 
+.container-small {
+  width: 1260px;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -445,6 +450,12 @@ body {
     width: 750px;
     width: 85%;
   }
+}
+
+.interface-header__h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
 }
 
 .interface-title {
@@ -1592,11 +1603,13 @@ body.compensate-for-scrollbar {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .feature-block__items {
   width: 155.8px;
-  line-height: 19px;
+  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1616,22 +1629,68 @@ body.compensate-for-scrollbar {
           transform: translate(200px, 4px);
 }
 
+.repairs-header {
+  margin-top: 88px;
+  margin-bottom: 25px;
+}
+
 .repair-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .repair-block__interface {
-  width: 445px;
+  width: 437px;
   height: 300px;
   background: #F2F5F9;
+  padding: 22px 50px 28px 53px;
 }
 
 .repair-block__interface:last-child {
   margin-top: 14px;
+}
+
+.repair-block__title-img {
+  max-height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.repair-block__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7px;
+}
+
+.repair-block__subtitle-information {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align-last: left;
+}
+
+.repair-block__subtitle-button {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  color: #4B5DFF;
+  padding: 14px 46px 17px 46px;
+  border: 1px solid #4B5DFF;
+  border-radius: 30px 0px 30px 30px;
+  font-size: 14px;
 }
 
 .repair-block__one {
@@ -1658,5 +1717,21 @@ body.compensate-for-scrollbar {
   width: 445px;
   height: 613px;
   background: #F2F5F9;
+}
+
+.repair-block__three-information {
+  margin-top: 9px;
+}
+
+.repair-block__three-glass {
+  text-align: center;
+  position: relative;
+  padding: 0px 54px 40px 50px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.repair-block__three-glass img {
+  height: 535px;
 }
 /*# sourceMappingURL=style.css.map */

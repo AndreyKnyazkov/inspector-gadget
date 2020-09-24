@@ -12,6 +12,9 @@ body
 .container
   width: 1365px
   margin: auto
+.container-small
+  width: 1260px
+  margin: auto
 @media (max-width: 1200px)
   .container
     width: 760px
@@ -31,6 +34,10 @@ body
     width: 85%
 
 .interface
+  &-header
+    &__h2
+      +Bold
+      font-size: 42px
   &-title
     letter-spacing: 0.7px
   &-logo

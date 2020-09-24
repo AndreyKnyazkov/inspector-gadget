@@ -1,18 +1,40 @@
 .repair
+  &s
+    &-header
+      margin-top: 88px
+      margin-bottom: 25px
   &-block
     display: flex
     justify-content: space-around
+    align-items: center
     &__interface
-      width: 445px
+      width: 437px
       height: 300px
       background: #F2F5F9
+      padding: 22px 50px 28px 53px
       &:last-child
         margin-top: 14px
     &__title
-      &_img
+      &-img
+        max-height: 174px
+        object-fit: cover
     &__subtitle
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 7px
       &-information
-      &-button    
+        +Bold
+        font-size: 20px
+        line-height: 30px
+        text-align-last: left
+      &-button
+        +Bold
+        color: #4B5DFF
+        padding: 14px 46px 17px 46px
+        border: 1px solid #4B5DFF
+        border-radius: 30px 0px 30px 30px
+        font-size: 14px     
     &__one
       display: flex
       flex-direction: column
@@ -27,4 +49,12 @@
       width: 445px
       height: 613px
       background: #F2F5F9
+      &-information
+        margin-top: 9px
       &-glass
+        text-align: center
+        position: relative
+        padding: 0px 54px 40px 50px
+        transform: translateY(-30px)
+        img
+          height: 535px
