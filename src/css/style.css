@@ -411,7 +411,6 @@ a:visited {
 body {
   font-family: 'Gilroy', sans-serif;
   font-weight: normal;
-  letter-spacing: -0.3px;
 }
 
 .container {
@@ -420,7 +419,7 @@ body {
 }
 
 .container-small {
-  width: 1260px;
+  width: 1240px;
   margin: auto;
 }
 
@@ -1631,22 +1630,23 @@ body.compensate-for-scrollbar {
 
 .repairs-header {
   margin-top: 88px;
-  margin-bottom: 25px;
+  margin-bottom: 39px;
 }
 
 .repair-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .repair-block__interface {
-  width: 437px;
+  width: 445px;
   height: 300px;
   background: #F2F5F9;
   padding: 22px 50px 28px 53px;
@@ -1720,15 +1720,15 @@ body.compensate-for-scrollbar {
 }
 
 .repair-block__three-information {
-  margin-top: 9px;
+  margin-top: 48px;
 }
 
 .repair-block__three-glass {
   text-align: center;
   position: relative;
   padding: 0px 54px 40px 50px;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-62px);
+          transform: translateY(-62px);
 }
 
 .repair-block__three-glass img {
