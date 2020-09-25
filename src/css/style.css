@@ -1734,4 +1734,65 @@ body.compensate-for-scrollbar {
 .repair-block__three-glass img {
   height: 535px;
 }
+
+.devrepairs {
+  margin-top: 30px;
+}
+
+.devrepairs-header {
+  margin-top: 80px;
+}
+
+.devrepair-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: between;
+      -ms-flex-pack: between;
+          justify-content: between;
+}
+
+.devrepair-block__item {
+  text-align: center;
+  border: 1px solid #E1E8F1;
+  border-radius: 0px 10px 10px 10px;
+  min-width: 160px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.devrepair-block__item:not(:nth-child(6n)) {
+  margin-right: 56px;
+}
+
+.devrepair-block__item:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #F2F5F9;
+}
+
+.devrepair-block__item-elem {
+  height: 100%;
+}
+
+.devrepair-block__item-elem span {
+  display: inline-block;
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
+.devrepair-block__item-elem:hover {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  color: #4B5DFF;
+}
 /*# sourceMappingURL=style.css.map */
