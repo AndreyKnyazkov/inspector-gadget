@@ -1736,11 +1736,12 @@ body.compensate-for-scrollbar {
 }
 
 .devrepairs {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .devrepairs-header {
   margin-top: 80px;
+  line-height: 60px;
 }
 
 .devrepair-block {
@@ -1794,5 +1795,67 @@ body.compensate-for-scrollbar {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   color: #4B5DFF;
+}
+
+.credibility {
+  margin-top: 80px;
+  background: url("../img/credibility/bg-service.jpg");
+  background-size: cover;
+  border-radius: 0px 20px 20px 20px;
+}
+
+.credibility-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 53px;
+  padding-right: 154px;
+  padding-top: 62px;
+  padding-bottom: 95px;
+}
+
+.credibility-block__header {
+  width: 340px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 60px;
+}
+
+.credibility-block__number {
+  margin-top: 12px;
+  width: 160px;
+  text-align: center;
+}
+
+.credibility-block__number-title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #4B5DFF;
+  position: relative;
+}
+
+.credibility-block__number-title::after {
+  position: absolute;
+  content: url(../img/credibility/leaves.svg);
+  -webkit-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
+
+.credibility-block__number-title::before {
+  position: absolute;
+  content: url(../img/credibility/leaves-2.svg);
+  -webkit-transform: translate(-51px, 2px);
+          transform: translate(-51px, 2px);
+}
+
+.credibility-block__number-subtitle {
+  padding-top: 44px;
+  font-size: 16px;
+  line-height: 150%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.credibility
+  margin-top: 80px
+  background: url('../img/credibility/bg-service.jpg')
+  background-size: cover 
+  border-radius: 0px 20px 20px 20px
+  &-block
+    display: flex
+    justify-content: space-between
+    padding-left: 53px
+    padding-right: 154px
+    padding-top: 62px
+    padding-bottom: 95px
+    &__header
+      width: 340px
+      +Bold
+      font-size: 42px
+      line-height: 60px
+    &__number
+      margin-top: 12px
+      width: 160px
+      text-align: center
+      &-title
+        +Bold
+        font-size: 48px
+        color: #4B5DFF
+        position: relative
+        &::after
+          position: absolute
+          content: url(../img/credibility/leaves.svg)
+          transform: translate(0px, 2px)
+        &::before
+          position: absolute
+          content: url(../img/credibility/leaves-2.svg)
+          transform: translate(-51px, 2px)
+      &-subtitle
+        padding-top: 44px
+        font-size: 16px
+        line-height: 150%
