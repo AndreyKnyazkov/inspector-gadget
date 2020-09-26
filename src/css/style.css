@@ -365,6 +365,30 @@ template {
   display: none;
 }
 
+.open .tab-js-subtitle {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  display: block;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.close .tab-js-subtitle {
+  height: 0;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -419,7 +443,7 @@ body {
 }
 
 .container-small {
-  width: 1240px;
+  width: 1260px;
   margin: auto;
 }
 
@@ -1947,5 +1971,53 @@ body.compensate-for-scrollbar {
   border-radius: 0px 0px 0px 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#F7C7FF), color-stop(95.22%, #D9E8FD));
   background: linear-gradient(180deg, #F7C7FF 0%, #D9E8FD 95.22%);
+}
+
+.defect-about__title {
+  margin-top: 80px;
+}
+
+.defect-about__subtitle {
+  font-size: 14px;
+  margin-top: 17px;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.defect-tabs {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.defect-tabs__block {
+  margin-top: 15px;
+}
+
+.defect-tabs__title {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 622px;
+  border-radius: 0px 10px 10px 10px;
+  border: 1px solid #E1E8F1;
+  padding: 17px 28px 22px 38px;
+}
+
+.defect-tabs__title::after {
+  content: url(../img/defects/arrow.svg);
+  -webkit-transform: translate(5px, 2px);
+          transform: translate(5px, 2px);
 }
 /*# sourceMappingURL=style.css.map */
