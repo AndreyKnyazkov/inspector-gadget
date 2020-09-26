@@ -1558,7 +1558,7 @@ body.compensate-for-scrollbar {
 .menu {
   background: #F2F5F9;
   border-radius: 20px 20px 0px 0px;
-  padding: 10px 0 16px 0;
+  padding: 10px 0 10px 0;
   font-size: 14px;
   letter-spacing: -0.3px;
   padding-left: 24px;
@@ -1857,5 +1857,95 @@ body.compensate-for-scrollbar {
   padding-top: 44px;
   font-size: 16px;
   line-height: 150%;
+}
+
+.about {
+  margin-top: 70px;
+}
+
+.about-block {
+  width: 180px;
+}
+
+.about-blocks {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-block__step {
+  color: #4B5DFF;
+  width: 42px;
+  height: 42px;
+  background: #F2F5F9;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.about-block__step span {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 7.5px;
+}
+
+.about-block__title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.about-block__subtitle {
+  margin-top: 15px;
+  line-height: 150%;
+}
+
+.offers-header {
+  margin-top: 70px;
+}
+
+.offer-block {
+  width: 330px;
+  padding: 80px 64px 36px 52px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.offer-blocks {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer-block:nth-child(1) {
+  border-radius: 0px 0px 0px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#AFB7FF), to(#A5DEFF));
+  background: linear-gradient(180deg, #AFB7FF 0%, #A5DEFF 100%);
+}
+
+.offer-block:nth-child(2) {
+  border-radius: 0px 0px 0px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFDAC5), to(#FBEAFF));
+  background: linear-gradient(180deg, #FFDAC5 0%, #FBEAFF 100%);
+}
+
+.offer-block:nth-child(3) {
+  border-radius: 0px 0px 0px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B4E4CD), to(#C1F1F4));
+  background: linear-gradient(180deg, #B4E4CD 0%, #C1F1F4 100%);
+}
+
+.offer-block:nth-child(4) {
+  border-radius: 0px 0px 0px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F7C7FF), color-stop(95.22%, #D9E8FD));
+  background: linear-gradient(180deg, #F7C7FF 0%, #D9E8FD 95.22%);
 }
 /*# sourceMappingURL=style.css.map */
