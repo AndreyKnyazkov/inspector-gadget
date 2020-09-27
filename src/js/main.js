@@ -1,87 +1,29 @@
 
-var accItem = document.getElementsByClassName('defect-tabs__block');
-var accHD = document.getElementsByClassName('defect-tabs__title');
-var popupName = ('.popup-answer');
-var link = ('.button');
-
-for (i = 0; i < accHD.length; i++) {
-  accHD[i].addEventListener('click', toggleItem, false);
+//Сначала по классу должен идти главный блок, заложенный в верстке, потом исполнительный класс скрипта, потом уже говорится закрыт он или нет
+//Пример: defect-tabs__block js-tab-main-block open
+//css код для скрипта: 
+/*
+.open .tab-js-subtitle {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-function toggleItem() {
-  var itemClass = this.parentNode.className;
-  for (i = 0; i < accItem.length; i++) {
-    accItem[i].className = 'defect-tabs__block close';
-  }
-  if (itemClass == 'defect-tabs__block close') {
-    this.parentNode.className = 'defect-tabs__block open';
-  }
+.close .tab-js-subtitle {
+  height: 0;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
 }
-
-const tabs = (elemToClick, elemTitle, elemDspr) => {
-
-  //
-  const accItem = document.querySelectorAll(elemToClick);
-  //Элемент на который при клике открывается таб
-  const accHD = document.querySelectorAll(elemTitle);
-  //То что должно раскрываться
-  const tabsJsSubtitle = document.querySelectorAll(elemDspr);
-  console.log(accHD);
-
-  // Скрываю все табы с описанием
-  document.querySelectorAll('.tab-js-subtitle').forEach(elem => {
-    elem.style.display = 'none';
-    elem.style.transform = 'transform: scaleY(1)';
-  });
-
-    //выдает класс кликнутого элемента
-
-      accItem.forEach((elem, i) => {
-        elem.addEventListener('click', event => {
-
-
-        console.log(tabsJsSubtitle[i]);
-        tabsJsSubtitle[i].style.display = 'block';
-
-
-        // let itemClass = this.parentNode.className;
-
-        // accHD[i].parentNode.className = 'questions-answer close';
-
-        // if (itemClass == 'questions-answer close') {
-        //   //добавляет тому на который кликнул
-        //   this.parentNode.className = 'questions-answer open';
-        // }
-      });
-    });
-    
-
-    
-    
-};
-
-//tabs('.tab-js-elem', '.tab-js-title', '.tab-js-subtitle');
-
-// var accItem = document.getElementsByClassName('questions-answer');
-// var accHD = document.getElementsByClassName('questions-answer__title');
-// var popupName = ('.popup-answer');
-// var link = ('.button');
-
-// for (let i = 0; i < accHD.length; i++) {
-//     accHD[i].addEventListener('click', toggleItem, false);
-// }
-// function toggleItem() {
-//     var itemClass = this.parentNode.className;
-//     for (i = 0; i < accItem.length; i++) {
-//         accItem[i].className = 'questions-answer close';
-//     }
-//     if (itemClass == 'questions-answer close') {
-//         this.parentNode.className = 'questions-answer open';
-//     }
-// }
-
-
-
+*/
 
 /* modal popup */
 $(document).ready(function($) {

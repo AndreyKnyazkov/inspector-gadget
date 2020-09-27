@@ -365,10 +365,8 @@ template {
   display: none;
 }
 
+/* START TABS PLUGIN */
 .open .tab-js-subtitle {
-  margin-top: 25px;
-  margin-bottom: 35px;
-  display: block;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   -webkit-transform-origin: top;
@@ -389,6 +387,7 @@ template {
   transform: scaleY(0);
 }
 
+/* END TABS PLUGIN */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
