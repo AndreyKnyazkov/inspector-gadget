@@ -1994,7 +1994,21 @@ body.compensate-for-scrollbar {
 }
 
 .defect-tabs__block {
+  width: 622px;
   margin-top: 15px;
+}
+
+.defect-tabs__block.open .defect-tabs__title {
+  background: #F2F5F9;
+  border: 1px solid #F2F5F9;
+  border-radius: 0px 10px 0px 0px;
+  padding: 17px 28px 7px 38px;
+}
+
+.defect-tabs__block.open .defect-tabs__title::after {
+  content: url(../img/defects/arrow-active.svg);
+  -webkit-transform: translate(4px, -2px);
+          transform: translate(4px, -2px);
 }
 
 .defect-tabs__title {
@@ -2008,7 +2022,6 @@ body.compensate-for-scrollbar {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   font-size: 20px;
-  width: 622px;
   border-radius: 0px 10px 10px 10px;
   border: 1px solid #E1E8F1;
   padding: 17px 28px 22px 38px;
@@ -2018,5 +2031,15 @@ body.compensate-for-scrollbar {
   content: url(../img/defects/arrow.svg);
   -webkit-transform: translate(5px, 2px);
           transform: translate(5px, 2px);
+}
+
+.defect-tabs__subtitle span {
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+  color: #9AA4B6;
+  background: #F2F5F9;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 28px 22px 38px;
 }
 /*# sourceMappingURL=style.css.map */

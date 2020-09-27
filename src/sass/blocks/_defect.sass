@@ -12,20 +12,36 @@
     display: flex
     justify-content: space-between
     &__block
+      width: 622px
       margin-top: 15px
+      &.open .defect-tabs__title
+        background: #F2F5F9
+        border: 1px solid #F2F5F9
+        border-radius: 0px 10px 0px 0px
+        padding: 17px 28px 7px 38px
+        &::after
+          content: url(../img/defects/arrow-active.svg)
+          transform: translate(4px, -2px)
     &__title
       cursor: pointer
       display: flex
       justify-content: space-between
       +Bold
       font-size: 20px
-      width: 622px
       border-radius: 0px 10px 10px 10px
       border: 1px solid #E1E8F1
       padding: 17px 28px 22px 38px
       &::after
         content: url(../img/defects/arrow.svg)
         transform: translate(5px, 2px)
+    &__subtitle span
+      font-size: 14px
+      line-height: 24px
+      display: inline-block
+      color: #9AA4B6
+      background: #F2F5F9
+      border-radius: 0px 0px 10px 10px
+      padding: 0px 28px 22px 38px
   &-tabs
     &__one
     &__two
