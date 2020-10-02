@@ -2,17 +2,41 @@
   margin-top: 80px
   margin-bottom: 80px
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   &-block
     display: flex
     flex-direction: column
     &__title
+      +Bold
+      font-size: 42px
     &__social
+      margin-top: 28px
+      img
+        width: 22px
+        &:not(:last-child)
+          margin-right: 13px
     &__phone
-    &__shedule
+      margin-top: 11px
+    &__schedule
+      display: flex
+      justify-content: space-between
+      line-height: 25px
+      margin-top: 26px
       &-city
       &-time
+        margin-left: 37px
     &__btn
+      margin-top: 54px
+      &-btn
+        +Bold
+        font-size: 14px
+        border: 1px solid #4B5DFF
+        border-radius: 0px 30px 30px 30px
+        color: #4B5DFF
+        padding: 18px 35px
+        &:visited
+          color: #4B5DFF
     &-map
       width: 848px
+      margin-top: 7px
       border-radius: 0px 20px 20px 0px

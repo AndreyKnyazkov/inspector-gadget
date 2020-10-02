@@ -1,282 +1,238 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Инспектор гаджет</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>  
-  <!-- C:\Users\Lilice\Desktop\projects\mobile-39\src\img -->
-<!-- (div.header-logo>.header-logo__img+.header-logo__text)+(div.header-information>.header-information__title+.header-information__subtitle)+(div.contact>(.header-contact__social+.header-contact__phone)+.header-contact__information)+.header-btn -->
-<section class="headers">
-  <div class="container">
-    <div class="header">
-      <div class="header-logo">
-        <div class="header-logo__img interface-logo">
-          <img src="./img/header/logo.svg" alt="Логотип">
-        </div>
-        <div class="header-logo__text">
-          <div class="header-logo__text-title interface-logo__title">Инспектор Гаджет</div>
-          <div class="header-logo__text-subtitle interface-logo__subtitle">Универсальный сервисный центр</div>
-        </div>
-      </div>
-      <div class="header-information">
-        <div class="header-information-block header-information-block-1">
-          <div class="header-information__title interface-information__title">Ваш город</div>
-          <div class="header-information__subtitle interface-information__subtitle">Калининград</div>
-        </div>
-        <div class="header-information-block header-information-block-2">
-          <div class="header-information__title interface-information__title">Заберем гаджет из дома</div>
-          <div class="header-information__subtitle interface-information__subtitle">Вызвать курьера</div>
-        </div>
-      </div>
-      <div class="header-contact">
-        <div class="header-contact__social">
-          <div class="header-contact__socials">
-            <img src="./img/header/whatsapp.svg" class="header-contact__socials-icons" alt="Вацап">
-            <img src="./img/header/telegram.svg" class="header-contact__socials-icons" alt="Телеграм">
-            <img src="./img/header/viber.svg" class="header-contact__socials-icons" alt="Вайбер">
-          </div>
-          <div class="header-contact__social-phone">
-            <div class="header-contact__phone interface-phone">8 962 252 09 97</div>
-          </div>
-        </div>
-        <div class="header-contact__information interface-time">Пн-Сб: 10:00 до 20:00, Воскресенье выходной </div>
-      </div>
-      <div class="header-btn">
-        <a href="#" class="header-btn__button interface-button__one">Перезвонить вам?</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="menus">
-  <div class="container">
-    <div class="menu">
-      <div class="menu-block">
-        <div class="menu-block__item">
-          <img src="">
-            <span>Главная</span>
-          <img src="">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/phone.svg">
-            <span>Ремонт телефонов</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/tablet.svg">
-            <span>Ремонт планшетов</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/glass.svg">
-            <span>Замена стекла</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/laptop.svg">
-            <span>Ремонт ноутбуков</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/game-console.svg">
-            <span>Ремонт приставок</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="">
-            <span>Контакты</span>
-          <img src="">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="heros">
-  <div class="container">
-    <div class="hero">
-      <div class="hero-block">
-        <div class="hero-block__title">
-          Универсальный сервисный центр
-        </div>
-        <div class="hero-block__subtitle">
-          Профессиональный ремонт планшетов, смартфонов, ноутбуков и игровых приставок
-        </div>
-        <div class="hero-block__btn">
-          <a class="interface-button__two">
-            Оставить заявку за 30 секунд
-          </a>          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="features">
-  <div class="container">
-    <div class="feature">
-      <div class="feature-block">
-        <div class="feature-block__items">
-          <span>Бесплатная диагностика</span>
-        </div>
-        <div class="feature-block__items">
-          <span>Ремонт от 15 минут Цены от 990 рублей</span>
-        </div>
-        <div class="feature-block__items">
-          <span>Оригинальные комплектующие</span>
-        </div>
-        <div class="feature-block__items">
-          <span>Гарантия 180 дней на все работы</span>
-        </div>
-        <div class="feature-block__items">
-          <span>Заберем из дома и привезем день в день</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="repairs-header">
-  <div class="container-small">
-    <div class="repairs-header-block">
-      <h2 class="repairs-header-block__header interface-header__h2">
-        Какое устройство нужно починить?
-      </h2>
-    </div>
-  </div>
-</section>
-<section class="reapairs">
-  <div class="container">
-    <div class="row">
-      <div class="repair">
-        <div class="repair-block">
-          <div class="repair-block__one">
-            <div class="repair-block__one-smart repair-block__interface">
-              <!-- It's common pattern for device -->
-              <div class="repair-block__title">
-                <img src="./img/what-to-repair/phone-or-spartphone.png" alt="Телефон или смартфон" class="repair-block__title-img">
-              </div>
-              <div class="repair-block__subtitle">
-                <div class="repair-block__subtitle-information">Телефон <br> или смартфон</div>
-                <a class="repair-block__subtitle-button interface-button__three">Починить</a>
-              </div>
-              <!-- It's the end common pattern for device -->
-            </div>
-            <div class="repair-block__one-laptop repair-block__interface">
-              <!-- It's common pattern for device -->
-              <div class="repair-block__title">
-                <img src="./img/what-to-repair/laptop.png" alt="Телефон или смартфон" class="repair-block__title-img">
-              </div>
-              <div class="repair-block__subtitle">
-                <div class="repair-block__subtitle-information">Ноутбук <br> или компьютер</div>
-                <a class="repair-block__subtitle-button interface-button__three">Починить</a>
-              </div>
-              <!-- It's the end common pattern for device -->
-            </div>
-          </div>
-          <div class="repair-block__two">
-            <div class="repair-block__two-tablet repair-block__interface">
-              <!-- It's common pattern for device -->
-              <div class="repair-block__title">
-                <img src="./img/what-to-repair/tablet.png" alt="Телефон или смартфон" class="repair-block__title-img">
-              </div>
-              <div class="repair-block__subtitle">
-                <div class="repair-block__subtitle-information">Планшетный <br> компьютер</div>
-                <a class="repair-block__subtitle-button interface-button__three">Починить</a>
-              </div>
-              <!-- It's the end common pattern for device -->
-            </div>
-            <div class="repair-block__two-console repair-block__interface">
-              <!-- It's common pattern for device -->
-              <div class="repair-block__title">
-                <img src="./img/what-to-repair/console.png" alt="Телефон или смартфон" class="repair-block__title-img">
-              </div>
-              <div class="repair-block__subtitle">
-                <div class="repair-block__subtitle-information">Игровая <br> приставка</div>
-                <a class="repair-block__subtitle-button interface-button__three">Починить</a>
-              </div>
-              <!-- It's the end common pattern for device -->
-            </div>
-          </div>
-          <div class="repair-block__three">
-            <div class="repair-block__three-glass">
-              <img src="./img/what-to-repair/glass-or-defence.png" alt="Телефон или смартфон">
-              <div class="repair-block__subtitle repair-block__three-information">
-                <div class="repair-block__subtitle-information">Замена стекла <br> и защита экрана</div>
-                <a class="repair-block__subtitle-button interface-button__three">Починить</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+			
+			
+			
+			
+			
+			<div style="height: 50px"></div>
+			<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+	<style>
+        /* START FONTS */
+        @font-face {
+font-family: 'Bebas Neue Bold';
+src: url('/fileservice/file/download/h/3f27f9a06afa43dcbade203e75637042.otf/a/160434/sc/230') format('opentype'),
+url('/fileservice/file/download/h/c0fe390651bbcbe631812eeef7deb201.woff/a/160434/sc/323') format('woff'); 
+} 
 
-<section class="devrepairs-header">
-  <div class="container-small">
-    <div class="devrepairs-header-block">
-      <h2 class="devrepairs-header-block__header interface-header__h2">
-        Производим ремонт устройств <br> всех ведущих брендов
-      </h2>
-    </div>
-  </div>
-</section>
+@font-face {
+font-family: 'Geometria Light';
+src: url('/fileservice/file/download/h/bebd39dea3ff8add842e53d574884637.otf/a/160434/sc/310') format('opentype'),
+url('/fileservice/file/download/h/22169ad432f23f7302ffa11b0e9f48d9.woff/a/160434/sc/141') format('woff'); 
+} 
 
-<section class="devrepairs">
-  <div class="container-small">
-    <div class="devrepair">
-      <div class="devrepair-block">
-        <div class="devrepair-block__item">
-            <div class="devrepair-block__item-elem">
-              Apple
-            </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Samsung
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Xiaomi
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Honor
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            LG
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Meizu
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Lenovo
-          </div>
-        </div>
-        <div class="devrepair-block__item">
-          <div class="devrepair-block__item-elem">
-            Xbox
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+@font-face {
+font-family: 'Geometria Bold';
+src: url('/fileservice/file/download/h/bebd39dea3ff8add842e53d574884637.otf/a/160434/sc/310') format('opentype'),
+url('/fileservice/file/download/h/22169ad432f23f7302ffa11b0e9f48d9.woff/a/160434/sc/141') format('woff'); 
+} 
+
+@font-face {
+font-family: 'Geometria Bold';
+src: url('/fileservice/file/download/h/159d0b8801060560975a536b29a3711a.otf/a/160434/sc/406') format('opentype'),
+url('/fileservice/file/download/h/159d0b8801060560975a536b29a3711a.woff/a/160434/sc/406') format('woff'); 
+} 
+        @media (max-width: 480px) {
+       
+        .help .block-cover {
+        background-image: url("https://fs.getcourse.ru/fileservice/file/download/a/116041/sc/253/h/fb8a3626decdef7bb0899455c02b2983.jpg")!important;
+            
+        }
+            .help.help-2 .block-cover {
+        background-image: url("https://fs.getcourse.ru/fileservice/file/download/a/116041/sc/228/h/01062d43c1247540de9b34bc9dadbd9e.jpg")!important;
+            
+        }
+            .fix-padding-mobile .block-cover {
+        background-image: url("https://fs.getcourse.ru/fileservice/file/download/a/116041/sc/253/h/fb8a3626decdef7bb0899455c02b2983.jpg")!important;
+            
+        }
+             }
+        /* START FOOTER */
+        .fix-padding-mobile .block-cover {
+        	background: no-repeat bottom;
+        }
+        .fix-padding-mobile button {
+   
+        background-color: rgba(0,0,0,0.8)!important;
+		font-family: 'Old Standard TT', serif!important;
+            font-weight: 400;
+        }
+        .fix-padding-mobile div {
+                	font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+        }
+        .fix-padding-mobile div {
+        font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+        }
+        /* END FOOTER */
+        .author .f-text {
+        color: #000!important;
+            font-family: 'Old Standard TT', serif!important;
+            font-weight: 400!important;
+        }
+        .author .f-subheader {
+         color: #000!important;
+            font-family: 'Old Standard TT', serif!important;
+            font-weight: bold!important;
+        }
+        .author .f-header {
+            color: #000!important;
+            font-family: 'Old Standard TT', serif!important;
+            font-weight: 400!important;
+               
+        }
+        .timepoint-content .f-name {
+        color: #000!important;
+            font-family: 'Old Standard TT', serif!important;
+            font-weight: bold!important;
+            
+        }
+        .timepoint-content .description {
+        font-family: 'Old Standard TT', serif!important;
+            font-weight: 400!important;
+            font-size: 18px!important;
+        }
+        .timepoint-info div {
+        color: #000!important;
+            font-family: 'Old Standard TT', serif!important;
+            font-weight: bold!important;
+        }
+        .couse-wait div {
+        font-family: 'Old Standard TT', serif!important;
+            font-weight: bold!important;
+        }
+        .price-table button {   
+        background-color: #f8f3f2!important;
+            color: #000!important;
+		font-family: 'Old Standard TT', serif!important;
+            font-weight: bold!important;
+        }
+        
+        .price-table .f-description {
+        font-family: 'Old Standard TT'!important;
+        font-weight: 400!important;
+           font-size: 18px;
+        }
+        .price-table .f-price {
+        font-family: 'Old Standard TT'!important;
+        font-weight: 400!important;
+        }
+        .price-table .f-header  {
+            font-family: 'Old Standard TT'!important;
+    		font-weight: Bold!important;    
+            color: #000;
+            font-size: 24px;
+        }
+        .price-header {
+            font-family: 'Old Standard TT'!important;
+    font-weight: Bold!important;
+        }
+        .lets-start {
+        font-family: 'Old Standard TT'!important;
+            font-style: 400!important;
+        }
+        /* END FONTS */
+        /* START HELP */
+        .header-for div {
+        font-family: 'Old Standard TT'!important;
+            font-weight: 400!important;
+        }
+p.help-numbers::after {
+    content: '';
+    height: 27px;
+    width: 1px;
+    background-color: #ffffff;
+    z-index: 0;
+    position: absolute;
+    transform: translate(-24px, 59px);
+}
+        .help-numbers-dspr {
+            color: #fff;
+            font-size: 24px;
+           	font-family: 'Old Standard TT'!important;
+            font-style: 400!important;
+        }
+        .help .lt-tsr-block {
+        border: none!important;
+        }
+        .help .image-card {
+        	display: none!important;
+        }
+        p.help-numbers {
+            padding-bottom: 40px!important;
+    color: #fff;
+    font-family: 'Old Standard TT'!important;
+    font-weight: 400!important;
+    font-size: 44px;
+}
+        /* END HELP */
+        
+        /* START HEADER STYLES */
+        .main-covers {
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+           
+        }
+        .main-covers .block-cover {
+        	background: no-repeat bottom;
+        }
+        .main-cover-btn button {
+   
+        background-color: rgba(0,0,0,0.8)!important;
+		font-family: 'Old Standard TT', serif!important;
+            font-weight: 400;
+        }
+        .header-h1 div {
+                	font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+        }
+        .main-cover-dspr div {
+        font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+        }
+        /* END HEADER STYLES */
+        /* START AM I HAPPY STYLES */
+        .am-i-happy div[data-path="column1"] {
+        	padding: 40px 40px;
+            background: #f8f3f2;
+            
+        }
+        .am-i-happy-header div {
+        	font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px!important;
+        }
+        .am-i-happy-dspr div {
+        font-family: 'Old Standard TT', serif;
+            font-weight: 400;
+           font-size: 16px!important;
+            text-align: center;
+        }
+        .am-i-happy-2 div {
+        position: absolute;
+        min-width: 135%;
+        transform: translate(-180px, 120px);
+        }
+        @media (max-width: 1200px) {
+            .am-i-happy-2 div {
+            	display: none;
+            }
+        }
+        @media (max-width: 480px) {
+        .am-i-happy-2 div {
+            display: block;
+    text-align: center!important;
+    position: initial;
+    min-width: 100%;
+    transform: translate(0px, 0px)!important;
+}
+            .am-i-happy-img {
+            display: none;
+            }
+            .am-i-happy .lt-block-wrapper {
+          		padding: 35px;
+            }
+        }
+        /* END AM I HAPPY STYLES */
+</style>								

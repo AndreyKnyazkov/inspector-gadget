@@ -507,7 +507,6 @@ body {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   font-size: 24px;
-  margin-left: 23px;
 }
 
 .interface-time {
@@ -537,6 +536,7 @@ body {
 .interface-button__one {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
+  display: inline-block;
   font-size: 14px;
   padding: 17px 57px;
   letter-spacing: -0.4px;
@@ -544,8 +544,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0px 30px 30px 30px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .interface-button__one:visited {
@@ -1550,6 +1548,10 @@ body.compensate-for-scrollbar {
   margin-right: 9px;
 }
 
+.header-contact__social-phone {
+  margin-left: 23px;
+}
+
 .hero {
   background: url(../img/hero-cover.svg) no-repeat;
   background-size: cover;
@@ -1630,7 +1632,7 @@ body.compensate-for-scrollbar {
 }
 
 .feature-block__items {
-  width: 155.8px;
+  width: 161.8px;
   line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1802,6 +1804,7 @@ body.compensate-for-scrollbar {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #F2F5F9;
+  border: 1px solid #F2F5F9;
 }
 
 .devrepair-block__item-elem {
@@ -2124,8 +2127,9 @@ body.compensate-for-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact-block {
@@ -2138,8 +2142,287 @@ body.compensate-for-scrollbar {
           flex-direction: column;
 }
 
+.contact-block__title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.contact-block__social {
+  margin-top: 28px;
+}
+
+.contact-block__social img {
+  width: 22px;
+}
+
+.contact-block__social img:not(:last-child) {
+  margin-right: 13px;
+}
+
+.contact-block__phone {
+  margin-top: 11px;
+}
+
+.contact-block__schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 25px;
+  margin-top: 26px;
+}
+
+.contact-block__schedule-time {
+  margin-left: 37px;
+}
+
+.contact-block__btn {
+  margin-top: 54px;
+}
+
+.contact-block__btn-btn {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #4B5DFF;
+  border-radius: 0px 30px 30px 30px;
+  color: #4B5DFF;
+  padding: 18px 35px;
+}
+
+.contact-block__btn-btn:visited {
+  color: #4B5DFF;
+}
+
 .contact-block-map {
   width: 848px;
+  margin-top: 7px;
   border-radius: 0px 20px 20px 0px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.footers {
+  background: #F2F5F9;
+}
+
+.footer-information-1-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-information-2 {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-information-2__place {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+}
+
+.footer-information-2__adress {
+  line-height: 17px;
+  width: 167px;
+}
+
+.footer-information-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+.footer-information-3__yourcity__description {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4B5DFF;
+  text-decoration: underline;
+}
+
+.footer-information-3__get {
+  width: 167px;
+}
+
+.footer-information-3__get__description {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4B5DFF;
+  text-decoration: underline;
+}
+
+.footer-device {
+  margin-top: 14px;
+  color: #9AA4B6;
+}
+
+.footer-device a {
+  color: #9AA4B6;
+}
+
+.footer-device a:visited {
+  color: #9AA4B6;
+}
+
+.footer-device__title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+}
+
+.footer-device__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: underline;
+}
+
+.footer-device__description__link {
+  margin-top: 20px;
+}
+
+.footer-brand {
+  margin-top: 14px;
+  width: 290px;
+  color: #9AA4B6;
+}
+
+.footer-brand a {
+  color: #9AA4B6;
+  text-decoration: underline;
+}
+
+.footer-brand a:visited {
+  color: #9AA4B6;
+}
+
+.footer-brand__title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+}
+
+.footer-brand_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-brand_search-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-brand_search-block__item {
+  margin-top: 20px;
+}
+
+.footer-contacts {
+  margin-top: 14px;
+}
+
+.footer-contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-contacts__worktime {
+  margin-top: 8px;
+  color: #9AA4B6;
+}
+
+.footer-contacts__btn {
+  margin-top: 19px;
+  display: block;
+  color: #4B5DFF;
+  text-align: center;
+}
+
+.footer-contacts__btn:visited {
+  color: #4B5DFF;
+}
+
+.footer-contacts__payment {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.politic {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.politic-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #9AA4B6;
+}
+
+.politic-block__busman {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: left;
+}
+
+.politic-block__politic {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.politic-block__politic:visited {
+  color: #9AA4B6;
+}
+
+.politic-block__year {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
