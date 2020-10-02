@@ -2236,15 +2236,16 @@ body.compensate-for-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 22px;
 }
 
 .footer-information-2__place {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
+  margin-right: 39px;
 }
 
 .footer-information-2__adress {
-  line-height: 17px;
   width: 167px;
 }
 
@@ -2255,7 +2256,7 @@ body.compensate-for-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 16px;
+  margin-top: 21px;
 }
 
 .footer-information-3__yourcity__description {
@@ -2306,7 +2307,7 @@ body.compensate-for-scrollbar {
 }
 
 .footer-device__description__link {
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .footer-brand {
@@ -2400,6 +2401,7 @@ body.compensate-for-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 14px;
   color: #9AA4B6;
 }
 
