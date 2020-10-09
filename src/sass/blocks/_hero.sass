@@ -1,7 +1,9 @@
 .hero
   background: url(../img/hero-cover.svg) no-repeat
-  background-size: cover 
+  background-size: cover!important
+  background-position: center!important
   height: 550px
+  border-radius: 0px 0px 20px 20px
   &-block
     text-align: center
     &__title
@@ -15,3 +17,32 @@
       color: #fff
     &__btn
       margin-top: 54px
+@media ( max-width: 768px )
+  .hero
+    background: url(../img/hero-cover-tablet.svg) no-repeat
+    height: 480px
+    &-block
+      &__title
+        padding-top: 56px
+        font-size: 38px
+      &__subtitle
+        margin-top: 20px
+        font-size: 14px
+      &__btn
+        margin-top: 51px
+        font-size: 12px
+@media ( max-width: 480px )
+  .hero
+    background: url(../img/hero-cover-mobile.svg) no-repeat
+    height: 400px
+    &-block
+      &__title
+        padding-top: 42px
+        font-size: 30px
+      &__subtitle
+        line-height: 150%
+        width: 80%
+        margin: auto
+        padding-top: 20px
+      &__btn
+        margin-top: 45px

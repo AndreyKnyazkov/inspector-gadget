@@ -6,6 +6,13 @@
   padding-bottom: 12px
   padding-top: 5px
   padding-left: 5px
+  &-btn
+    &__button
+      &-mobile
+        display: none
+    &__burger
+      &-mobile
+        display: none
   &-logo
     display: flex
     align-items: center
@@ -30,6 +37,7 @@
   &-contact
     display: flex
     flex-direction: column
+    transform: translateX(12px)
     &__social
       display: flex
       align-items: center
@@ -38,5 +46,74 @@
           margin-right: 9px
       &-phone        
         margin-left: 23px
-      
-           
+@media ( max-width: 1370px )
+  .header
+    &-information
+      &-block
+        &-1
+          margin-right: 0
+@media (max-width: 1200px)
+  .header
+    &-contact
+      transform: initial
+    &-btn
+      &__button
+        display: none
+        &-mobile
+          display: block
+        &-burger
+          display: none
+@media (max-width: 1050px)
+  .header
+    &-information
+      display: none       
+@media (max-width: 768px)
+  .header
+    &-logo
+      &__text
+        transform: translateY(2px)
+    &-contact
+      transform: translate(35px, -1px)
+    &-contact
+      &__social
+        &-phone
+          margin-left: 12px
+        &s
+          &-icons
+            width: 17px
+            &:not(:last-child)
+              margin-right: 5px
+    &-btn
+      &__button
+        &-mobile
+          transform: translate(2px, -4px)
+@media (max-width: 690px)
+  .header
+    &-contact
+      transform: initial
+@media (max-width: 620px)
+  .header
+    margin-top: 15px
+    &-contact
+      display: none
+    &-btn
+      display: flex
+      &__burger
+        &-mobile
+          display: block
+          width: 54px
+          transform: translate(2px, -4px)
+      &__button
+        &-mobile
+          margin-right: 14px
+@media (max-width: 480px)
+  .header
+    &-btn
+      &__burger 
+        &-mobile
+          width: 36px
+          transform: initial
+      &__button
+        &-mobile
+          width: 36px
+          transform: initial

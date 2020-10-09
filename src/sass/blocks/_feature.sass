@@ -6,8 +6,9 @@
     justify-content: space-around
     padding-left: 18px;
     padding-right: 18px
+    transform: translateX(14px)
     &__items
-      width: 161.8px
+      width: 174.8px
       line-height: 24px
       display: flex
       &::before
@@ -18,5 +19,52 @@
         position: absolute
         content: url(../img/feature/line.svg)
         transform: translate(200px, 4px)
-      
-        
+@media ( max-width: 1370px )
+  .feature
+    &-block
+      &__items
+        &:not(:last-child)
+          &::after
+            content: ''
+@media ( max-width: 980px )
+  .feature
+    margin-top: 37px
+    &-block
+      &__items
+        font-size: 12px
+        line-height: 21px
+        &::before
+          content: url(../img/feature/star-tablet.svg)
+          transform: translate(0px, -19px)  
+@media ( max-width: 768px )
+  .feature
+    &-block
+      padding: 0
+      &__items
+        width: initial
+@media ( max-width: 660px )
+  .feature
+    &-block
+      display: flex
+      flex-wrap: wrap
+      transform: translateX(0)  
+      &__items
+        flex-basis: 50%
+        justify-content: center
+        font-size: 14px
+        text-align: center
+        &::before
+          content: url(../img/feature/star.svg)
+          transform: translate(0px, -23px)
+        &:nth-child(1)
+          margin-top: 10px
+        &:nth-child(2)
+          margin-top: 10px
+        &:nth-child(3) 
+          margin-top: 74px  
+        &:nth-child(4)
+          margin-top: 74px
+        &:nth-child(5)
+          margin-top: 74px
+          
+  

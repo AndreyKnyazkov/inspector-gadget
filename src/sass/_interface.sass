@@ -14,13 +14,18 @@ body
 .container-small
   width: 1260px
   margin: auto
+@media ( max-width: 1370px )
+  .container
+    width: 1190px
 @media (max-width: 1200px)
   .container
     width: 760px
     width: 95%
 @media (max-width: 768px)
   .container
-    max-width: 580px
+    width: 93%
+  .container-help
+    width: 100%!important
   .header-description
     margin-top: 15px
     font-size: 14px
@@ -30,8 +35,7 @@ body
 @media (max-width: 480px)
   .container
     width: 750px
-    width: 85%
-
+    width: 92%
 .interface
   &-header
     &__h2
@@ -92,4 +96,31 @@ body
       border-radius: 0px 30px 30px 30px
       &:visited
         color: #fff
-      
+@media (max-width: 768px)
+  .interface
+    &-button
+      &__two
+        padding: 17px 25px
+        font-size: 12px
+    &-logo
+      margin-right: 9px
+      &__subtitle
+        margin-top: 6px
+      img
+        width: 51px
+      &__title
+        font-size: 18px
+      &__subtitle
+        font-size: 12px
+        // w36px  
+    &-phone
+      font-size: 18px
+    &-time
+      margin-top: 8px
+      font-size: 12px
+@media (max-width: 480px)
+  .interface
+    &-logo
+      width: 36px
+      &__subtitle
+        margin-top: 3px
