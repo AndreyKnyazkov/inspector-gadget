@@ -32,5 +32,58 @@
         &:hover
           +Bold
           color: #4B5DFF
-          
+@media ( max-width: 1370px )
+  .devrepair
+    &-block
+      &__item
+        &:not(:nth-child(6n))
+          margin-right: 0
+        &:not(:nth-child(5n))
+          margin-right: 56px
+@media ( max-width: 1204px )
+  .devrepair-block__item
+    &:not(:nth-child(5n))
+      margin-right: 0
+    &:not(:nth-child(4n))
+      margin-right: 56px      
+@media ( max-width: 951px )
+  .devrepair-block__item    
+    &:not(:nth-child(3n))
+      margin-right: 0
+    &:not(:nth-child(4n))
+      margin-right: 18px
+@media ( max-width: 768px )
+  .devrepair-block__item  
+    min-width: 147px
+    &:not(:nth-child(3n))
+      margin-right: 0
+    &:not(:nth-child(4n))
+      margin-right: 18px
+@media ( max-width: 755px )
+    .devrepair-block__item  
+      &:not(:nth-child(4n))
+        margin-right: 0
+      &:not(:nth-child(3n))
+        margin-right: 18px
+@media ( max-width: 561px )
+  .devrepair-block
+    justify-content: space-between
+    &__item
+      &:not(:nth-child(3n))
+          margin-right: 0px
+@media ( max-width: 480px )
+  .devrepair-block
+    font-size: 14px
+    min-width: 160px
+    &-elem
+      transform: translateY(14px)
+    &-item
+      margin-top: 23px
+@media ( max-width: 355px )
+  .devrepair-block
+    &__item
+      min-width: 130px
+      
+
+  
         

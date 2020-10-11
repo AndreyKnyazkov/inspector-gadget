@@ -482,6 +482,7 @@ body {
     font-size: 16px;
   }
   .interface-header__h2 {
+    line-height: 50px;
     font-size: 34px !important;
   }
 }
@@ -497,6 +498,7 @@ body {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   font-size: 42px;
+  line-height: 36px;
 }
 
 .interface-title {
@@ -2205,6 +2207,7 @@ body.compensate-for-scrollbar {
   .repair-block__interface {
     padding: 7% 10% 10% 8%;
     height: 250px;
+    border-radius: 0px 20px 20px 20px;
   }
   .repair-block__interface:last-child {
     margin-top: 20px;
@@ -2284,6 +2287,85 @@ body.compensate-for-scrollbar {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   color: #4B5DFF;
+}
+
+@media (max-width: 1370px) {
+  .devrepair-block__item:not(:nth-child(6n)) {
+    margin-right: 0;
+  }
+  .devrepair-block__item:not(:nth-child(5n)) {
+    margin-right: 56px;
+  }
+}
+
+@media (max-width: 1204px) {
+  .devrepair-block__item:not(:nth-child(5n)) {
+    margin-right: 0;
+  }
+  .devrepair-block__item:not(:nth-child(4n)) {
+    margin-right: 56px;
+  }
+}
+
+@media (max-width: 951px) {
+  .devrepair-block__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .devrepair-block__item:not(:nth-child(4n)) {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .devrepair-block__item {
+    min-width: 147px;
+  }
+  .devrepair-block__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .devrepair-block__item:not(:nth-child(4n)) {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 755px) {
+  .devrepair-block__item:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+  .devrepair-block__item:not(:nth-child(3n)) {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 561px) {
+  .devrepair-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .devrepair-block__item:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .devrepair-block {
+    font-size: 14px;
+    min-width: 160px;
+  }
+  .devrepair-block-elem {
+    -webkit-transform: translateY(14px);
+            transform: translateY(14px);
+  }
+  .devrepair-block-item {
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 355px) {
+  .devrepair-block__item {
+    min-width: 130px;
+  }
 }
 
 .credibility {
