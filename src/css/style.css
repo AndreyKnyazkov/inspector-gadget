@@ -454,6 +454,9 @@ body {
   .container {
     width: 1190px;
   }
+  .container-small {
+    width: 85%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -478,6 +481,9 @@ body {
   .header-title {
     font-size: 16px;
   }
+  .interface-header__h2 {
+    font-size: 34px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -498,7 +504,7 @@ body {
 }
 
 .interface-logo {
-  margin-right: 13px;
+  margin-right: 17px;
 }
 
 .interface-logo__title {
@@ -530,6 +536,10 @@ body {
   margin-top: 6px;
 }
 
+.interface-button__one {
+  padding: 19px 57px;
+}
+
 .interface-information__title {
   font-size: 14px;
   letter-spacing: -0.3px;
@@ -551,7 +561,7 @@ body {
   font-weight: bold;
   display: inline-block;
   font-size: 14px;
-  padding: 17px 57px;
+  padding: 19px 56px;
   letter-spacing: -0.4px;
   border: 1px solid #4B5DFF;
   -webkit-box-sizing: border-box;
@@ -578,6 +588,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container-help-2 {
+    width: 98% !important;
+    margin: auto;
+  }
   .interface-button__two {
     padding: 17px 25px;
     font-size: 12px;
@@ -612,6 +626,10 @@ body {
   }
   .interface-logo__subtitle {
     margin-top: 3px;
+  }
+  .container-help-2 {
+    width: 90% !important;
+    margin: auto;
   }
 }
 
@@ -1534,10 +1552,10 @@ body.compensate-for-scrollbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
   padding-bottom: 12px;
   padding-top: 5px;
   padding-left: 5px;
+  margin-top: 8px;
 }
 
 .header-btn__button-mobile {
@@ -1561,8 +1579,8 @@ body.compensate-for-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateX(33px);
-          transform: translateX(33px);
+  -webkit-transform: translateX(31px);
+          transform: translateX(31px);
 }
 
 .header-information-block-1 {
@@ -1780,7 +1798,7 @@ body.compensate-for-scrollbar {
 .menu {
   background: #F2F5F9;
   border-radius: 20px 20px 0px 0px;
-  padding: 10px 0 10px 0;
+  padding: 17px 0 17px 0;
   font-size: 14px;
   letter-spacing: -0.3px;
   padding-left: 24px;
@@ -2028,6 +2046,181 @@ body.compensate-for-scrollbar {
 
 .repair-block__three-glass img {
   height: 535px;
+}
+
+@media (max-width: 1370px) {
+  .repair-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .repair-block__subtitle-information {
+    margin-right: 30px;
+  }
+  .repair-block__three {
+    border-radius: 0px 0px 20px 20px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    height: 123px;
+    margin-bottom: 20px;
+  }
+  .repair-block__three-information {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .repair-block__three-glass {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    padding: 0px 54px 40px 50px;
+  }
+  .repair-block__three-glass-img img {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    position: absolute;
+    height: 210px;
+    bottom: -19px;
+    right: 187px;
+  }
+}
+
+@media (max-width: 955px) {
+  .repairs-header {
+    margin-top: 57px;
+    margin-bottom: 29px;
+  }
+  .repair-block__subtitle.repair-block__three-information.repair-block__subtitle-information_3help-title {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+  }
+  .repair-block__subtitle-button {
+    font-size: 12px;
+    padding: 17px 38px 17px 40px;
+  }
+  .repair-block__subtitle-information {
+    margin-right: 0;
+  }
+  .repair-block__subtitle-information_3help {
+    margin-right: 32px;
+  }
+  .repair-block__subtitle-information_3help-title {
+    -webkit-transform: translateY(-10px) !important;
+            transform: translateY(-10px) !important;
+  }
+  .repair-block__interface {
+    width: auto !important;
+    height: auto;
+    padding: 8% 7% 8% 14%;
+  }
+  .repair-block__one {
+    width: 49%;
+  }
+  .repair-block__two {
+    width: 49%;
+  }
+  .repair-block__three {
+    margin-bottom: 20px;
+  }
+  .repair-block__three-glass-img img {
+    bottom: -37px;
+  }
+  .repair-block__three-glass {
+    padding: 27px 56px 40px 50px;
+  }
+  .repair-block__subtitle {
+    margin-top: 10px;
+  }
+  .repair-block__subtitle-information {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .repair-block__title-img {
+    max-height: 139px;
+  }
+}
+
+@media (max-width: 738px) {
+  .repair-block__three-glass-img img {
+    right: 140px;
+  }
+}
+
+@media (max-width: 655px) {
+  .repair-block__one {
+    width: 100%;
+  }
+  .repair-block__two {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .repair-block__three {
+    margin: 20px 0px 0px 0px;
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+    height: 250px;
+  }
+  .repair-block__three-glass {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-69px);
+            transform: translateY(-69px);
+  }
+  .repair-block__three-glass-img {
+    text-align: left;
+    margin-left: 50px;
+    -webkit-transform: translateY(19px);
+            transform: translateY(19px);
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .repair-block__three-glass-img img {
+    position: initial !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .interface-header__h2 {
+    font-size: 30px !important;
+  }
+  .repair-block__subtitle.repair-block__three-information.repair-block__subtitle-information_3help-title {
+    -webkit-transform: translateY(-10px) !important;
+            transform: translateY(-10px) !important;
+  }
+  .repair-block__subtitle-information_3help-title {
+    margin-top: 14px !important;
+    text-align: left;
+  }
+  .repair-block__interface {
+    padding: 7% 10% 10% 8%;
+    height: 250px;
+  }
+  .repair-block__interface:last-child {
+    margin-top: 20px;
+  }
+  .repair-block__subtitle {
+    margin-top: 8px;
+  }
+  .repair-block__subtitle-button {
+    padding: 17px 33px 19px 33px;
+  }
+  .repair-block__subtitle-information_3help {
+    margin-right: 0 !important;
+  }
+  .repair-block__three-glass {
+    padding: 7% 10% 10% 8%;
+  }
 }
 
 .devrepairs {
