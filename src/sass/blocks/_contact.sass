@@ -6,6 +6,8 @@
   &-block
     display: flex
     flex-direction: column
+    &-mobile
+      display: none
     &__title
       +Bold
       font-size: 42px
@@ -40,3 +42,80 @@
       width: 806px
       margin-top: 7px
       border-radius: 0px 20px 20px 0px
+@media ( max-width: 1370px )
+  .contact
+    &-block
+      width: 40%
+      &__schedule
+        justify-content: initial
+      &-map
+        width: 60%
+@media ( max-width: 1140px )
+  .contact
+    &-block
+      width: 50%
+      &-map
+        width: 50%
+@media ( max-width: 950px )
+  .contact
+    flex-direction: column 
+    &-block
+      width: 100%
+      &-map
+        width: 100%
+        margin-top: 50px
+@media ( max-width: 768px )
+  .contact
+    &-block
+      width: 88%
+      margin: auto
+      &__group
+        width: 29%
+      &__btn
+        margin-top: 56px
+        &-btn
+          +Bold
+          font-size: 12px
+          padding: 18px 39px          
+      &-help
+        display: flex
+      &__social
+        margin-top: 33px
+        img
+          width: 17px
+          &:not(:last-child)
+            margin-right: 5px
+      &__schedule
+        margin-top: 21px
+        font-size: 14px
+        line-height: 22px
+@media ( max-width: 565px )
+  .contact
+    margin-top: 50px
+    &-block
+      text-align: center
+      &__schedule
+        margin-top: 32px
+      &-map
+        margin-top: 62px
+        height: 208px
+      &__social
+        margin-top: 31px
+      &__btn
+        margin-top: 49px
+        &-btn
+          padding: 17px 15px
+      &__title        
+      &__group
+        width: 100%
+        text-align: center
+      &__schedule
+        flex-direction: column
+        &-time
+          margin-top: 30px
+          margin-left: 0px
+      &-desktop
+        display: none
+      &-mobile
+        text-align: center
+        display: block

@@ -43,7 +43,52 @@
       background: #F2F5F9
       border-radius: 0px 0px 10px 10px
       padding: 0px 28px 22px 38px
-  &-tabs
-    &__one
-    &__two
-.tab-js-subtitle
+@media ( max-width: 1370px )
+  .defect
+    &-tabs
+      &__block
+        width: auto
+      &__one
+        width: 49%
+      &__two
+        width: 49%
+@media ( max-width: 1250px )
+  .defect
+    &-about
+      &__subtitle
+        width: 100%
+@media ( max-width: 1000px )
+  .defect
+    &-tabs
+      flex-direction: column
+      &__one
+        width: 100%
+      &__two
+        width: 100%
+@media ( max-width: 768px )
+  .defect
+    &-about
+      &__subtitle
+        font-size: 14px
+        line-height: 24px
+    &-tabs
+      &__title
+        padding: 19px 29px 20px 38px
+        font-size: 16px
+        &::after
+          transform: translate(6px, -1px)
+@media ( max-width: 480px )
+  .defect
+    &-about
+      &__subtitle
+        margin-top: 17px
+    &-tabs
+      &__subtitle
+        span
+          padding: 0px 28px 22px 29px
+      &__title
+        padding: 20px 25px 21px 28px
+  .defect-tabs__block.js-tab-main-block.open .defect-tabs__title.tab-js-title
+    padding: 20px 25px 9px 28px
+  .defect-tabs__block.open .defect-tabs__title::after
+    transform: translate(3px, 6px)

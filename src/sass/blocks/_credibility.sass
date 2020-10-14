@@ -9,16 +9,18 @@
     padding-left: 53px
     padding-right: 154px
     padding-top: 62px
-    padding-bottom: 80px
+    padding-bottom: 61px
     &__header
-      width: 340px
+      width: 30%
       +Bold
-      font-size: 42px
-      line-height: 60px
     &__number
       margin-top: 12px
       width: 160px
       text-align: center
+      &s
+        display: flex
+        width: 61%
+        justify-content: space-between      
       &-1
         transform: translateX(-12px)
       &-2
@@ -41,3 +43,67 @@
         padding-top: 44px
         font-size: 16px
         line-height: 150%
+@media ( max-width: 1370px )
+  .credibility
+    &-block
+      &__header
+        width: 34%
+@media ( max-width: 1200px )
+  .credibility
+    &-block
+      padding-right: 70px
+@media ( max-width: 1112px )
+  .credibility
+    &-block
+      padding-top: 42px
+      flex-direction: column
+      &__header
+        text-align: center
+        width: 100%
+      &__number
+        &s
+          margin-top: 40px
+          width: 100%
+        &-title
+          font-size: 36px
+@media ( max-width: 768px )
+  .credibility
+    &-block
+      padding: 42px 47px 61px 47px
+      &__header
+      &__number
+        &-subtitle
+          font-size: 14px
+          padding-top: 29px
+        &s
+          margin-top: 29px
+        &-title
+          &::before
+            content: url(../img/credibility/leaves-mobile.svg)
+            transform: translate(-44px, 2px)
+          &::after
+            content: url(../img/credibility/leaves-2-mobile.svg)
+@media ( max-width: 480px )
+  .credibility    
+    &-block
+      padding: 56px 0px 73px 0px
+      &__number
+        &-1
+          margin-top: 17px
+          transform: initial
+        &-2
+          margin-top: 32px
+          transform: initial
+        &-3
+          margin-top: 32px
+          transform: initial
+        &-title
+          font-size: 30px
+          &::before
+            transform: translate(-46px, -3px)
+          &::after
+            transform: translate(3px, -2px)
+        &s
+          flex-direction: column
+          align-items: center
+  
