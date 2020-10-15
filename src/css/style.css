@@ -2184,6 +2184,7 @@ body.compensate-for-scrollbar {
 }
 
 .credibility-block__header {
+  line-height: 60px !important;
   width: 30%;
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
@@ -2279,6 +2280,9 @@ body.compensate-for-scrollbar {
 @media (max-width: 768px) {
   .credibility-block {
     padding: 42px 47px 61px 47px;
+  }
+  .credibility-block__header {
+    line-height: 36px !important;
   }
   .credibility-block__number-subtitle {
     font-size: 14px;
