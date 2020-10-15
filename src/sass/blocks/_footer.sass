@@ -4,9 +4,14 @@
   display: flex
   justify-content: space-between
   font-size: 14px
+  &-mobile
+    display: none!important
   &s
     background: #F2F5F9  
   &-information
+    &-23
+      display: flex
+      flex-direction: column
     &-1
       &-logo
         display: flex
@@ -47,6 +52,8 @@
   &-device
     margin-top: 14px
     color: #9AA4B6
+    &-tablet
+      display: none
     a
       color: #9AA4B6
       &:visited
@@ -63,6 +70,8 @@
     margin-top: 14px
     width: 290px
     color: #9AA4B6
+    &-tablet
+      display: none
     a
       color: #9AA4B6
       text-decoration: underline
@@ -101,3 +110,160 @@
       display: flex
       justify-content: space-between
       &_img        
+@media ( max-width: 1200px )
+  .footer
+    &-tablet
+      height: 85px
+      justify-content: space-between
+    &-information
+      &-2
+        display: none
+      &-3
+        display: none
+    &-device
+      &-tablet
+        display: block
+        color: #000
+        line-height: 22px
+    &-brand
+      margin-right: 17%
+      &-tablet
+        width: 114%
+        padding-top: 3px
+        color: #000
+        display: flex
+    flex-wrap: wrap
+    &-mobile
+      display: block!important
+    &-desktop
+      display: none!important
+    &-information
+      width: 100%
+      &-1
+        display: flex
+        justify-content: space-between
+      &-23
+        flex-direction: initial
+      &-2
+        &__place
+          display: none
+      &-3
+        width: 40%
+@media ( max-width: 768px )
+  .footer
+    &-contacts
+        margin-top: 38px
+        img
+          &:nth-child(1)
+            width: 23px
+          &:nth-child(2)
+            width: 43px
+          &:nth-child(3)
+            width: 34px
+          &:nth-child(4)
+            width: 30px
+          &:nth-child(5)
+            width: 44px
+    &-tablet
+      margin-top: 14px
+      margin-bottom: 12px
+    &-mobile
+      margin-right: 10%
+    &-information
+      &-1
+        align-items: center
+      &-23
+        margin-top: 18px
+      &-3
+        width: 100%
+    &-contacts
+      display: flex
+      align-items: center
+      width: 100%
+      &__btn
+        padding: 17px 51px!important
+        font-size: 12px!important
+      &__worktime
+        font-size: 12px
+        margin-top: 7px
+      &__social
+        justify-content: flex-start
+      &__btn
+        margin-top: 0
+      &__payment
+        width: 36%
+        margin-top: 0
+        margin-left: 49px
+@media ( max-width: 660px )
+  .footer
+    &-contacts
+      margin-top: 62px
+      &__payment
+        width: 50%
+        margin-left: 22px
+    &-brand
+      margin-right: 6%
+@media ( max-width: 583px )
+  .footer
+    &-mobile
+      margin-right: 0
+    &-brand
+      margin-right: 0
+      &-tablet
+        width: 100%
+@media ( max-width: 537px )
+  .footer
+    padding-top: 31px
+    padding-bottom: 35px
+    &-desktop
+      & .interface-phone
+        margin-top: 10px
+    &-brand
+      margin-top: 4px
+    &-information
+      &-3
+        &__get
+          margin-top: 30px
+    &-contacts
+      flex-direction: column
+      &__payment
+        margin-left: 0
+        width: 67%
+        margin-top: 44px
+      &__btn
+        margin-top: 37px
+        padding: 17px 39px !important
+      &__social
+        display: block!important
+        &_help
+          text-align: center
+          img
+            &:nth-child(1)
+              width: 18px            
+            &:nth-child(2)
+              width: 16px              
+            &:nth-child(3)
+              width: 16px    
+    &-brand
+      display: flex
+      width: 100%
+      &-tablet
+        flex-direction: column
+        text-align: center
+    &-information
+      &-1
+        &-logo
+          width: 100%
+          justify-content: center
+      &-3
+        &__get
+          width: 100%
+    &-mobile
+      display: none!important
+    &-device
+      display: none
+    &-brand
+      &__title
+        display: none
+      &_search
+        display: none

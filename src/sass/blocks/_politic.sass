@@ -5,6 +5,9 @@
     display: flex
     font-size: 14px
     color: #9AA4B6
+    &-social
+      &-mobile
+        display: none
     &__busman
       flex-basis: 33.33%
       text-align: left
@@ -17,3 +20,39 @@
     &__year
       flex-basis: 33.33%
       text-align: right
+@media ( max-width: 768px )
+  .politic
+    &-block
+      flex-direction: column
+      &__busman
+        text-align: center 
+        font-size: 12px
+        margin-top: 15px       
+      &__politic
+        order: -3
+        text-align: center
+      &__year
+        margin-top: 23px
+        font-size: 12px
+        order: -2
+        text-align: center
+@media ( max-width: 480px )
+  .politic
+    margin-top: 41px
+    &-block
+      &__politic
+        margin-top: 28px
+      &__year
+        font-size: 10px
+      &__busman
+        font-size: 10px
+        margin-top: 5px
+      &-social
+        &-mobile
+          order: -3
+          margin-top: 9px
+          display: flex
+          width: 27%
+          margin: auto
+          justify-content: space-between
+
