@@ -414,10 +414,6 @@ input {
   outline: none;
 }
 
-body {
-  padding-bottom: 150px;
-}
-
 body.compensate-for-scrollbar {
   overflow: hidden;
 }
@@ -1442,6 +1438,18 @@ body.compensate-for-scrollbar {
   .header-information {
     display: none;
   }
+  .header-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-btn__button-mobile {
+    margin-right: 20px;
+  }
+  .header-btn__burger-mobile {
+    width: 54px;
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1450,8 +1458,8 @@ body.compensate-for-scrollbar {
             transform: translateY(2px);
   }
   .header-contact {
-    -webkit-transform: translate(35px, -1px);
-            transform: translate(35px, -1px);
+    -webkit-transform: translate(0px, -1px);
+            transform: translate(0px, -1px);
   }
   .header-contact__social-phone {
     margin-left: 12px;
@@ -1463,6 +1471,11 @@ body.compensate-for-scrollbar {
     margin-right: 9px;
   }
   .header-btn__button-mobile {
+    -webkit-transform: translate(2px, -4px);
+            transform: translate(2px, -4px);
+    margin-right: 20px;
+  }
+  .header-btn__burger-mobile {
     -webkit-transform: translate(2px, -4px);
             transform: translate(2px, -4px);
   }
@@ -1614,6 +1627,18 @@ body.compensate-for-scrollbar {
   padding: 0px 8px 0px 8px;
 }
 
+@media (max-width: 1200px) {
+  .menu-block__item:nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .menu {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .menu-block__item {
     font-size: 12px;
@@ -1642,8 +1667,8 @@ body.compensate-for-scrollbar {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
   -webkit-transform: translateX(14px);
           transform: translateX(14px);
 }

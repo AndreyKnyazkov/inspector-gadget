@@ -66,14 +66,23 @@
 @media (max-width: 1050px)
   .header
     &-information
-      display: none       
+      display: none    
+    &-btn
+      display: flex
+      &__button
+        &-mobile
+          margin-right: 20px
+      &__burger
+        &-mobile
+          width: 54px
+          display: block
 @media (max-width: 768px)
   .header
     &-logo
       &__text
         transform: translateY(2px)
     &-contact
-      transform: translate(35px, -1px)
+      transform: translate(0px, -1px)
     &-contact
       &__social
         &-phone
@@ -85,6 +94,10 @@
               margin-right: 9px
     &-btn
       &__button
+        &-mobile
+          transform: translate(2px, -4px)   
+          margin-right: 20px   
+      &__burger
         &-mobile
           transform: translate(2px, -4px)
 @media (max-width: 690px)

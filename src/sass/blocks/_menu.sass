@@ -15,6 +15,15 @@
       align-items: center
       span
         padding: 0px 8px 0px 8px
+@media ( max-width: 1200px )
+  .menu
+    &-block
+      &__item
+        &:nth-child(1)
+          display: none
+@media ( max-width: 1050px )
+  .menu
+    display: none
 @media ( max-width: 900px )
   .menu
     &-block
