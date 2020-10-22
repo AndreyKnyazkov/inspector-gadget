@@ -1,0 +1,67 @@
+.hero
+  &.glass
+    background: url(../img/contacts/cover-glass.svg) no-repeat
+  &.contacts
+    background: url(../img/contacts/cover.svg) no-repeat
+    height: 366px
+    & .hero-block
+      text-align: left
+      margin-left: 53px
+    & .hero-block__subtitle
+      margin-top: 12px
+      max-width: 636px
+      line-height: 150%
+    & .hero-block__title
+      padding-top: 43px
+    & .hero-block__btn
+      margin-top: 45px
+  &-bread
+    color: #69AEFF
+    padding-top: 27px
+    font-size: 14px
+@media ( max-width: 768px )
+  .hero
+    &.contacts
+      background: url(../img/contacts/cover-tablet.svg) no-repeat
+      height: 480px
+    &.glass
+      background: url(../img/contacts/cover-tablet-glass.svg) no-repeat
+    &-bread
+      font-size: 12px
+      padding-top: 21px
+      margin-left: 33px
+    &.contacts
+      & .hero-block
+        margin-left: 0px
+      & .hero-block__title
+        padding-top: 20px
+        text-align: center
+      & .hero-block__subtitle
+        margin: auto
+        max-width: 579px
+        text-align: center
+        padding-top: 19px
+      & .hero-block__btn
+        text-align: center
+        margin-top: 49px
+@media ( max-width: 480px )
+  .hero
+    &-block
+      &__title
+        width: 80%
+        margin: auto
+    &-bread
+      padding-top: 19px
+      margin-left: 21px
+    &.contacts
+      background: url(../img/contacts/cover-mobile.svg) no-repeat
+      height: 527px
+    &.glass
+      background: url(../img/contacts/cover-mobile-glass.svg) no-repeat
+      & .hero-block__title
+        padding-top: 31px
+      & .hero-block__subtitle
+        max-width: 335px
+        width: initial
+      & .hero-block__btn
+        margin-top: 43px

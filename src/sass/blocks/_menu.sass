@@ -6,6 +6,12 @@
   letter-spacing: -0.3px
   padding-left: 24px
   padding-right: 24px
+  a
+    color: #000
+    &:active
+      color: #000
+    &:visited
+      color: #000
   &-block
     display: flex
     align-items: center
@@ -13,6 +19,8 @@
     &__item
       display: flex
       align-items: center
+      a
+        padding: 0px 8px 0px 8px
       span
         padding: 0px 8px 0px 8px
 @media ( max-width: 1200px )

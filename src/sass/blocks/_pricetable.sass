@@ -1,0 +1,90 @@
+.pricetable
+  &s
+    margin-top: 80px
+  &-subtitle
+    margin-top: 27px
+  &-common
+    &-elem
+      &s
+        width: 55%
+        display: flex
+        justify-content: space-between
+    &-header
+      display: flex
+      justify-content: space-between
+      border-radius: 0px 10px 10px 10px
+      padding: 17px 49px 24px 63px
+    &-other
+      width: 100px
+  &-block
+    margin-top: 37px
+    &__header
+      color: #fff
+      +Bold
+      background: linear-gradient(180deg, #4B5DFF 0%, #4B93FF 100%)
+      font-size: 20px
+    &__dspr
+      border: 1px solid #e1e8f1
+      margin-top: 10px
+      &-elem
+        &s
+          +Bold
+        &-1
+        &-2
+        &-3
+        &-4          
+        &-5
+          color: #4B5DFF
+@media ( max-width: 768px )
+  .pricetable
+    &-title
+      margin-top: 2px
+    &-subtitle
+      margin-top: 8px
+      font-size: 14px
+    &-common
+      &-header
+        padding: 16px 0px 17px 45px
+    &-block
+      margin-top: 30px
+      &__header
+        font-size: 16px
+        &-elem
+          &_4
+            display: none
+      &__dspr
+        margin-top: 16px
+        font-size: 14px
+        &-elem
+          &-4
+            display: none
+@media ( max-width: 650px )
+  .pricetable
+    &-block
+      margin-top: 22px
+    &-subtitle
+      margin-top: 16px
+      line-height: 150%
+      max-width: 75%
+    &-common
+      &-header        
+        padding: 12px 38px 15px 30px
+    &-block
+      &__header
+        display: none
+      &__dspr
+        flex-direction: column
+        &:not(:first-child)
+          margin-top: 20px
+        &-elem
+          &s
+            border-top: 1px solid #E1E8F1
+            width: 100%
+            padding-top: 17px
+          &_1
+            padding-bottom: 13px
+          &-2
+          &-3
+          &-4
+          &-5
+            width: unset!important

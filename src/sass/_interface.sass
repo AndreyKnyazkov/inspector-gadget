@@ -9,11 +9,15 @@ a
 body
   +Reg
 .interface
+  &-section
+    margin-top: 80px
+  &-subtitle
+    margin-top: 27px
   &-header
     &__h2
       +Bold
       font-size: 42px
-      line-height: 36px
+      line-height: 50px
   &-title
     letter-spacing: 0.7px
   &-logo
@@ -99,6 +103,9 @@ body
   .header-title
     font-size: 16px
   .interface
+    &-subtitle
+      margin-top: 8px
+      font-size: 14px
     &-header
       &__h2
         line-height: 50px
@@ -132,6 +139,12 @@ body
     &-time
       margin-top: 8px
       font-size: 12px
+@media ( max-width: 650px )
+  .interface
+    &-subtitle
+      margin-top: 16px
+      line-height: 150%
+      max-width: 75%
 @media (max-width: 480px)
   .interface
     &-header

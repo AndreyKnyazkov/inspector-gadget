@@ -1,0 +1,56 @@
+.repairglass
+  margin-top: 37px
+  &-title
+    max-width: 800px
+  &-block
+    display: flex
+    &__img
+      max-width: 417px
+      &:not(:last-child)
+        margin-right: 30px
+      &:nth-child(1)
+        border-radius: 0px 0px 0px 20px
+      &:nth-child(3)
+        border-radius: 0px 20px 20px 0px
+.glass
+  &-help
+    &-1
+      margin-top: 41px
+    &-3
+      margin-top: 41px
+    &-title
+      &-2
+        margin-top: 10px
+      &-3
+        margin-top: 10px
+@media ( max-width: 1370px )
+  .repairglass
+    &-block
+      justify-content: space-between
+      &__img
+        width: 32%
+        &:not(:last-child)
+          margin-right: 0
+@media ( max-width: 768px )
+  .repairglass
+    margin-top: 31px
+  .glass
+    &-help
+      &-title
+        &-2
+          margin-top: 31px
+        &-3
+          margin-top: 31px
+        &-4
+          margin-top: 31px
+      &-3
+        margin-top: -7px
+@media ( max-width: 650px )
+  .repairglass
+    margin-top: 7px
+    &-block
+      flex-direction: column
+      &__img
+        margin-top: 15px
+        width: 100%
+        border-radius: 0px!important
