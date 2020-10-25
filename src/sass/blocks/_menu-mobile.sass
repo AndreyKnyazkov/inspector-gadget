@@ -1,0 +1,128 @@
+@media  ( max-width: 1050px )
+  .menu-mobile
+    display: block
+    max-height: 110vh
+    z-index: 2
+    overflow-y: scroll
+    overflow-x: hidden
+    &-about
+      &-social
+        width: calc(100% + 10%)
+        transform: translateX(-5%)
+        display: flex
+        align-items: center
+        text-align: cener
+        justify-content: center
+        height: 50px
+        background: #F2F5F9
+        a
+          &:not(:last-child)
+            margin-right: 22px       
+      &-politic
+        text-align: center
+        color: #9AA4B6
+        text-decoration: underline
+        padding-top: 14px
+        padding-bottom: 21px   
+    &-contacts
+      text-align: center
+      &__links
+        text-align: center
+        &-socials
+          margin-bottom: 10px
+      &__btn
+        margin-top: 14px
+        color: #4B5DFF
+        font-size: 12px
+        padding: 14px 41px 20px 36px
+    &__item__title
+      cursor: pointer
+      display: flex
+      justify-content: space-between      
+    &-block
+      // was 14px
+      font-size: 16px
+      padding-bottom: 32px
+      border-top: 1px solid #E1E8F1
+      &-active
+        color: #4B5DFF
+      &__item
+        padding-top: 23px
+        &.open
+          & .menu-mobile__item__title 
+            color: #4B5DFF
+            &:after
+              content: url(../img/defects/arrow-active.svg)
+              transform: translateY(3px)
+        &.close
+          & .menu-mobile__item__title 
+            &:after
+              content: url(../img/defects/arrow.svg)
+              transform: translateY(-3px)
+        &__title
+          display: flex
+          justify-content: space-between      
+        &s
+          &-elem
+            padding-top: 20px
+            padding-left: 20px
+    &-link
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &s
+        margin-bottom: 10px
+        cursor: pointer
+        //was 14px
+        font-size: 16px
+        margin-top: 6px
+        height: 94px
+        border: 1px solid #E1E8F1
+        width: 47.5%
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        span
+          padding-top: 12px
+        &:hover
+          background: #F2F5F9
+          transition: 0.5s
+        &:nth-child(2)
+          border-radius: 0px 10px 0px 0px
+        &:nth-child(3)
+          border-radius: 0px 0px 0px 10px
+        &:nth-child(4)
+          border-radius: 0px 0px 10px 0px
+    &-contacts
+      &-socials        
+        display: flex
+        width: calc(100% + 10%)
+        background: #F2F5F9
+        transform: translateX(-5%)
+        height: 50px
+      &-politic
+        margin-top: 14px
+        margin-top: 21px
+        color: #9AA4B6
+        text-decoration: underline
+        height: 50px
+        justify-content: center
+        text-align: center
+    &-contacts
+      padding-bottom: 40px
+      margin-top: 0
+      padding-top: 21px
+@media  ( max-width: 480px )
+  .menu-mobile-block
+    font-size: 14px
+  .menu-mobile-links
+    font-size: 14px
+  .menu-mobile-block__item.close .menu-mobile__item__title
+    &::after
+      content: url(../img/menu/arrow.svg)
+      transform: translate(-8px, 1px)
+  .menu-mobile-block__item.open .menu-mobile__item__title
+    &::after
+      content: url(../img/menu/arrow-active.svg)
+      transform: translate(-8px, 4px)

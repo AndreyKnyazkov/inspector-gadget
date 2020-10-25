@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Инспектор гаджет</title>
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
+<style>
 
+</style>
 <body>
   <!-- C:\Users\Lilice\Desktop\projects\mobile-39\src\img -->
   <!-- .open .questions-answer__subtitle -->
   <!-- (div.header-logo>.header-logo__img+.header-logo__text)+(div.header-information>.header-information__title+.header-information__subtitle)+(div.contact>(.header-contact__social+.header-contact__phone)+.header-contact__information)+.header-btn -->
-  <img src="./img/phone.svg" alt="">
   <section class="headers">
     <div class="container">
       <div class="header">
@@ -51,52 +53,301 @@
         <div class="header-btn">
           <a href="#" class="header-btn__button interface-button__one">Перезвонить вам?</a>
           <img class="header-btn__button-mobile" src="./img/header/call-out.svg" alt="Обратный звонок">
-          <img class="header-btn__burger-mobile" src="./img/header/burger.svg" alt="Меню">
+          <img class="header-btn__burger-mobile" src="./img/header/burger.svg" alt="Меню" data-open="./img/header/burger-mobile.svg" data-img="./img/header/burger.svg">
         </div>
       </div>
     </div>
   </section>
 
+<section class="menu-mobile menu-mobile-close" style="display: none;">
+  <div class="container">
+
+    <div class="menu-mobile-block">
+
+    <div class="menu-mobile-block__item js-tab-main-block">
+      <div class="menu-mobile__item__title tab-js-title">
+          <span>Ремонт телефонов</span>
+              
+      </div>
+      <div class="menu-mobile-items tab-js-subtitle">
+        <div class="menu-mobile-block__items-elem">
+          Apple
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Samsung
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Huawei
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Xiaomi
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Meizu
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile-block__item js-tab-main-block">
+      <div class="menu-mobile__item__title tab-js-title">
+          <span>Ремонт планшетов</span>
+              
+      </div>
+      <div class="menu-mobile-items tab-js-subtitle">
+        <div class="menu-mobile-block__items-elem">
+          Apple
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Samsung
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Huawei
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Xiaomi
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Meizu
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile-block__item js-tab-main-block">
+      <div class="menu-mobile__item__title tab-js-title">
+          <span>Замена стекла</span>
+              
+      </div>
+      <div class="menu-mobile-items tab-js-subtitle">
+        <div class="menu-mobile-block__items-elem">
+          Apple
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Samsung
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Huawei
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Xiaomi
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Meizu
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile-block__item js-tab-main-block">
+      <div class="menu-mobile__item__title tab-js-title">
+          <span>Ремонт ноутбуков</span>
+              
+      </div>
+      <div class="menu-mobile-items tab-js-subtitle">
+        <div class="menu-mobile-block__items-elem">
+          Apple
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Samsung
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Huawei
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Xiaomi
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Meizu
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile-block__item js-tab-main-block">
+      <div class="menu-mobile__item__title tab-js-title">
+          <span>Ремонт Приставок</span>
+              
+      </div>
+      <div class="menu-mobile-items tab-js-subtitle">
+        <div class="menu-mobile-block__items-elem">
+          Apple
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Samsung
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Huawei
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Xiaomi
+        </div>
+        <div class="menu-mobile-block__items-elem">
+          Meizu
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <div class="menu-mobile-link">
+      <div class="menu-mobile-links">
+        <img src="./img/menu/menu-mobile/home.svg" alt="Главная">
+        <span>Главная</span>
+      </div>
+      <div class="menu-mobile-links">
+        <img src="./img/menu/menu-mobile/phone.svg" alt="Контакты">
+        <span>Контакты</span>
+      </div>
+      <div class="menu-mobile-links">
+        <img src="./img/menu/menu-mobile/geo-tag.svg" alt="Ваш город">
+        <span>Ваш город</span>
+      </div>
+      <div class="menu-mobile-links">
+        <img src="./img/menu/menu-mobile/person.svg" alt="Вызвать курьера">
+        <span>Вызвать курьера</span>
+      </div>
+    </div>
+    <div class="menu-mobile-contacts">
+        <div class="menu-mobile-contacts__links">   
+          <div class="menu-mobile-contacts__links-socials">     
+            <img src="./img/header/whatsapp.svg" class="header-contact__socials-icons" alt="Вацап">
+            <img src="./img/header/telegram.svg" class="header-contact__socials-icons" alt="Телеграм">
+            <img src="./img/header/viber.svg" class="header-contact__socials-icons" alt="Вайбер">
+          </div>  
+          <div class="interface-phone">8 962 252 09 97</div>
+        </div>
+        <div class="footer-contacts__worktime footer-desktop">
+          Пн-Сб: 11:00 до 20:00, Воскресенье выходной
+        </div>
+        <a class="menu-mobile-contacts__btn interface-button__one">
+          Перезвонить вам?
+        </a>
+      </div>
+      <div class="menu-mobile-about">
+        <div class="menu-mobile-about-social">
+        <a href="#">
+        <img src="./img/footer/vk.svg" alt="ВКонтакте">
+        </a>
+        <a href="#">
+        <img src="./img/footer/insta.svg" alt="Инстаграм"></a>
+        <a href="#">
+        <img src="./img/footer/facebook.svg" alt="Фейсбук"></a>
+      </div>
+      </div>
+      <div class="menu-mobile-about-politic">
+        Политика конфиденциальности
+      </div>
+  </div>
+</section>
+
 <section class="menus">
   <div class="container">
     <div class="menu">
       <div class="menu-block">
-        <div class="menu-block__item">
-          <img src="">
-          <a href="/">Главная</a>
-          <img src="">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/phone.svg">
-          <a href="./repair.html">Ремонт телефонов</a>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/tablet.svg">
-          <a href="./repair.html">Ремонт планшетов</a>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/glass.svg">
+        <a class="menu-block__item" href="/">
+          <span>Главная</span>
+        </a>
+        <a class="menu-block__item" href="./repair.html">
+          <img src="./img/menu/phone.svg" data-hover="./img/menu/phone-hover.svg" data-img="./img/menu/phone.svg" class="data-hover">
+          <span>Ремонт телефонов</span>
+          <img src="./img/menu/arrow.svg" class="data-arrow" data-hover="./img/menu/arrow-active.svg" data-img="./img/menu/arrow.svg">
+        </a>
+        <a class="menu-block__item" href="./repair.html">
+          <img src="./img/menu/tablet.svg" data-hover="./img/menu/tablet-hover.svg" data-img="./img/menu/tablet.svg"  class="data-hover">
+          <span>Ремонт планшетов</span>
+          <img src="./img/menu/arrow.svg" class="data-arrow" data-hover="./img/menu/arrow-active.svg" data-img="./img/menu/arrow.svg">
+        </a>
+        <a href="./repair-glass.html" class="menu-block__item">
+          <img src="./img/menu/glass.svg" data-hover="./img/menu/glass-hover.svg" data-img="./img/menu/glass.svg" class="data-hover">
           <span>Замена стекла</span>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/laptop.svg">
-          <a href="./repair.html">Ремонт ноутбуков</a>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="./img/menu/game-console.svg">
-          <a href="./repair.html">Ремонт приставок</a>
-          <img src="./img/menu/arrow.svg">
-        </div>
-        <div class="menu-block__item">
-          <img src="">
-          <a href="./contacts.html">Контакты</a>
-          <img src="">
-        </div>
+          <img src="./img/menu/arrow.svg" class="data-arrow" data-hover="./img/menu/arrow-active.svg" data-img="./img/menu/arrow.svg">
+        </ф>
+        <a class="menu-block__item" href="./repair.html">
+          <img src="./img/menu/laptop.svg" data-hover="./img/menu/laptop-hover.svg" data-img="./img/menu/laptop.svg" class="data-hover">
+          <span>Ремонт ноутбуков</span>
+          <img src="./img/menu/arrow.svg" class="data-arrow" data-hover="./img/menu/arrow-active.svg" data-img="./img/menu/arrow.svg">
+        </a>
+        <a class="menu-block__item" href="./repair.html">
+          <img src="./img/menu/game-console.svg" data-hover="./img/menu/game-console-hover.svg" data-img="./img/menu/game-console.svg" class="data-hover">
+          <span>Ремонт приставок</span>
+          <img src="./img/menu/arrow.svg" class="data-arrow" data-hover="./img/menu/arrow-active.svg" data-img="./img/menu/arrow.svg">
+        </a>
+        <a class="menu-block__item" href="./contacts.html">
+          <span>Контакты</span>
+        </a>
       </div>
+    </div>
+  </div>
+</section>
+<section class="menuitem">
+  <div class="container-small">
+    <div class="menuitem-block" data-link="./repair.html">
+      <div class="menuitem-block__cat">
+        <a href="#">Apple</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Samsung</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Xiaomi</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Meizu</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Sony</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Nokia</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Apple</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Samsung</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Xiaomi</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Meizu</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Sony</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Nokia</a>
+      </div>      
+    </div>
+    <div class="menuitem-block" data-link="./repair-glass.html">
+      <div class="menuitem-block__cat">
+        <a href="#">Samsung</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Apple</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Xiaomi</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Meizu</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Sony</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Nokia</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Apple</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Samsung</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Xiaomi</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Meizu</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Sony</a>
+      </div>
+      <div class="menuitem-block__cat">
+        <a href="#">Nokia</a>
+      </div>      
     </div>
   </div>
 </section>
@@ -489,7 +740,7 @@
     <div class="request">
       <div class="request__title">Оставить заявку на ремонт</div>
       <div class="request-btn">
-        <a href="" class="request-btn_btn">Оставить заявку на 30 секунд</a>
+        <a href="" class="request-btn_btn  interface-btn-hover-2">Оставить заявку на 30 секунд</a>
       </div>
     </div>
   </div>
@@ -616,13 +867,13 @@
           </div>
         </div>
         <div class="contact-block__btn">
-          <a href="" class="contact-block__btn-btn">Заказать обратный звонок</a>
+          <a href="" class="contact-block__btn-btn interface-btn-hover-1">Заказать обратный звонок</a>
         </div>
       </div>
       <div class="contact-block-map">
-        <script type="text/javascript" charset="utf-8" async
+        <!-- <script type="text/javascript" charset="utf-8" async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba7cbc157f3a3fd3a42c2a38a149d271eddfd2099a246fb0f875c3a0eda01c25&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false">
-        </script>
+        </script> -->
       </div>
       <div class="contact-block-mobile">
         <div class="contact-block__schedule">
@@ -795,14 +1046,14 @@
   </div>
 </section>
 
-<script>myMap.behaviors.disable('scrollZoom')</script>
+<!-- <script>myMap.behaviors.disable('scrollZoom')</script> -->
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/main.js"></script>
 <script src="js/plugins.js"></script>
 </body>

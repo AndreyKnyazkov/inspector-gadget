@@ -9,6 +9,20 @@ a
 body
   +Reg
 .interface
+  &-btn
+    &-hover
+      &-1
+        &:hover
+          background: #4B5DFF
+          color: #fff!important
+      &-2
+        &:hover
+          color: #4B5DFF
+          background: #fff
+      &-3
+        &:hover
+          background: #4B5DFF
+          color: #fff
   &-section
     margin-top: 80px
   &-subtitle
@@ -42,6 +56,10 @@ body
   &-button
     &__one
       padding: 19px 57px
+    &__three
+      &:hover
+        background: #4B5DFF
+        color: #fff
   &-information
     &__title
       font-size: 14px
@@ -60,11 +78,14 @@ body
       font-size: 14px
       padding: 19px 56px
       letter-spacing: -0.4px
-      border: 1px solid #4B5DFF;
+      border: 1px solid #4B5DFF
       box-sizing: border-box
       border-radius: 0px 30px 30px 30px
       &:visited
         color: #4B5DFF
+      &:hover
+        background: #4B5DFF!important
+        color: #fff!important
     &__two
       +Bold
       font-size: 14px
@@ -74,6 +95,9 @@ body
       border-radius: 0px 30px 30px 30px
       &:visited
         color: #fff
+      &:hover
+        color: #4B5DFF
+        background: #fff
 .container
   width: 1365px
   margin: auto
