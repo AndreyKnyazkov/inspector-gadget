@@ -4440,10 +4440,10 @@ body {
 @media (max-width: 1050px) {
   .menu-mobile {
     display: block;
-    max-height: 110vh;
     z-index: 2;
+    height: calc(95vh);
     overflow-y: scroll;
-    overflow-x: hidden;
+    margin-bottom: 50px;
   }
   .menu-mobile-about-social {
     width: calc(100% + 10%);
@@ -4471,6 +4471,7 @@ body {
     text-decoration: underline;
     padding-top: 14px;
     padding-bottom: 21px;
+    height: 102px;
   }
   .menu-mobile-contacts {
     text-align: center;
