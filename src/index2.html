@@ -34,7 +34,7 @@
           </div>
           <div class="header-information-block header-information-block-2">
             <div class="header-information__title interface-information__title">Заберем гаджет из дома</div>
-            <div class="header-information__subtitle interface-information__subtitle">Вызвать курьера</div>
+            <div class="header-information__subtitle interface-information__subtitle popup-open-2">Вызвать курьера</div>
           </div>
         </div>
         <div class="header-contact">
@@ -51,8 +51,8 @@
           <div class="header-contact__information interface-time">Пн-Сб: 10:00 до 20:00, Воскресенье выходной </div>
         </div>
         <div class="header-btn">
-          <a href="#" class="header-btn__button interface-button__one">Перезвонить вам?</a>
-          <img class="header-btn__button-mobile" src="./img/header/call-out.svg" alt="Обратный звонок">
+          <a href="#" class="header-btn__button interface-button__one popup-open" data-popup-content="Обратный звонок">Перезвонить вам?</a>
+          <img class="header-btn__button-mobile popup-open" data-popup-content="Обратный звонок" src="./img/header/call-out.svg" alt="Обратный звонок">
           <img class="header-btn__burger-mobile" src="./img/header/burger.svg" alt="Меню" data-open="./img/header/burger-mobile.svg" data-img="./img/header/burger.svg">
         </div>
       </div>
@@ -362,7 +362,7 @@
           Профессиональный ремонт планшетов, смартфонов, ноутбуков и игровых приставок
         </div>
         <div class="hero-block__btn">
-          <a class="interface-button__two">
+          <a class="interface-button__two" data-popup>
             Оставить заявку за 30 секунд
           </a>
         </div>
@@ -871,9 +871,9 @@
         </div>
       </div>
       <div class="contact-block-map">
-        <!-- <script type="text/javascript" charset="utf-8" async
+        <script type="text/javascript" charset="utf-8" async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba7cbc157f3a3fd3a42c2a38a149d271eddfd2099a246fb0f875c3a0eda01c25&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false">
-        </script> -->
+        </script>
       </div>
       <div class="contact-block-mobile">
         <div class="contact-block__schedule">
@@ -1045,6 +1045,84 @@
     </div>
   </div>
 </section>
+
+<!-- <a class="popup-open">Открыть popup</a>
+
+<div class="popup-fade">
+	<div class="popup">
+		<a class="popup-close">Закрыть</a>
+		<p>Всплывающие окна имеют широкий диапазон применений...</p>
+	</div>		
+</div> -->
+
+<div class="popup-shadow popup-number-1">
+  <div class="popup-block modal-block">
+    <div class="popup-close modal-block_close"><img src="./img/modal-close.svg" alt="Закрыть"></div>
+    <div class="modal-block_form">
+      <div class="modal-block_form-information">
+        <div class="popup-edit modal-block_form-information__title">
+          обратный звонок
+        </div>
+        <div class="modal-block_form-information__content">
+          Заполните эту короткую форму и мы перезвоним Вам в течение 10 минут
+        </div>
+      </div>
+      <form action="" class="modal-block_form_form">
+        <input class="modal-block_form_form_name" type="text" placeholder="Ваше имя">
+        <input class="modal-block_form_phone" type="text" placeholder="Ваш телефон">
+        <button class="modal-block_form_form_button">Отправить форму</button>
+        <div class="modal-block_form_form_checkbox">
+          <input type="checkbox" id="check-1" required>
+          <label for="check-1">
+            <div class="modal-block_form_form_checkbox__block">
+              Отправляя форму, я соглашаюсь на обработку персональных данных
+            </div>            
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup-shadow popup-number-2">
+  <div class="popup-block modal-block">
+    <div class="popup-close modal-block_close"><img src="./img/modal-close.svg" alt="Закрыть"></div>
+    <div class="modal-block_form">
+      <div class="modal-block_form-information">
+        <div class="popup-edit modal-block_form-information__title">
+          обратный звонок
+        </div>
+        <div class="modal-block_form-information__content">
+          Заполните эту короткую форму и мы перезвоним Вам в течение 10 минут
+        </div>
+      </div>
+      <form action="" class="modal-block_form_form">
+        <input class="modal-block_form_form_name" type="text" placeholder="Ваше имя">
+        <input class="modal-block_form_phone" type="text" placeholder="Ваш телефон">
+        <input class="modal-block_form_phone" type="text" placeholder="Комментарий">
+        <button class="modal-block_form_form_button">Отправить форму</button>
+        <div class="modal-block_form_form_checkbox">
+          <input type="checkbox" id="check-2" required>
+          <label for="check-2">
+            <div class="modal-block_form_form_checkbox__block">
+              Отправляя форму, я соглашаюсь на обработку персональных данных
+            </div>            
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="popup-open">Открыть</div>
+
+<div class="popup-shadow popup-number-1">
+  <div class="popup-block">
+    <div class="popup-close">Закрыть</div>
+    <div class="popup-edit">заголовок</div>
+    <div class="popup-content">Это контент всплывающего окна</div>
+  </div>
+</div> -->
 
 <!-- <script>myMap.behaviors.disable('scrollZoom')</script> -->
 

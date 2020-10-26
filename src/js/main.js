@@ -1,32 +1,7 @@
 // Отключить прокрутку яндекс карты руками
 //отключаем зум колёсиком мышки
 
-/* modal popup */
-$(document).ready(function($) {
-  $('.button').on('click', function() {
-    $('.modal-answer').text($(this).attr('data-popup'));
-    $('.modal').css("display", "flex").hide().fadeIn();
-    return false;
-  });	
-	
-  $('.modal-close').click(function() {
-    $(this).parents('.modal').fadeOut();
-    return false;
-  });		
- 
-  $(document).keydown(function(e) {
-    if (e.keyCode === 27) {
-      e.stopPropagation();
-      $('.modal').fadeOut();
-    }
-  });
-	
-  $('.modal').click(function(e) {
-    if ($(e.target).closest('.modal-block').length == 0) {
-      $(this).fadeOut();					
-    }
-  });
-});
+
 
 const menuBlockItem = document.querySelectorAll('.menu-block__item');
 let dataHover = document.querySelectorAll('.data-hover');
@@ -44,15 +19,15 @@ menuBlockItem.forEach((elem, index, htmlelem) => {
       //set new src
       e.setAttribute('src', e.dataset.hover);
       //change arrow to active
-      console.log(e.parentNode);
+      //console.log(e.parentNode);
       //show elements of menu
       document.querySelectorAll('.menuitem-block').forEach((menu) => {
-        console.log(menu.getAttribute('data-link'));
+        //console.log(menu.getAttribute('data-link'));
         if (menu.getAttribute('data-link') === e.parentNode.getAttribute('href')) {
           menu.style.display = 'flex';
         }
       });
-      console.log(document.querySelectorAll('.menuitem-block'));
+      //console.log(document.querySelectorAll('.menuitem-block'));
       Array.from(e.parentNode.children).forEach(el => {
         if (el.classList.contains('data-arrow')) {
           el.setAttribute('src', el.dataset.hover);
@@ -68,7 +43,7 @@ menuBlockItem.forEach((elem, index, htmlelem) => {
     if (e.classList.contains('data-hover')) {
       e.setAttribute('src', e.dataset.img);
       document.querySelectorAll('.menuitem-block').forEach((menu) => {
-        console.log(menu.getAttribute('data-link'));
+        //console.log(menu.getAttribute('data-link'));
         if (menu.getAttribute('data-link') === e.parentNode.getAttribute('href')) {
           menu.style.display = 'none';
         }

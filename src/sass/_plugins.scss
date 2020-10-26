@@ -25,3 +25,129 @@
   transform: translateY(2px);
 }
 /* END MENU */
+/* START POPUP */
+.popup-open {
+  cursor: pointer;
+}
+.popup-shadow {
+  display: none;
+}
+.popup-shadow:before {
+  content: '';
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup-block {
+  //values of top should be same
+  top: 20%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 10%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.popup-close {
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    //values of top should be same
+    top: 20%;
+    opacity: 1
+  }
+}
+/* END POPUP */
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  border: 1px solid #fff;
+  content: "\00a0";
+  display: inline-block;
+  font: 20px/1em sans-serif;
+  height: 20px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  min-width: 20px;
+  margin-top: 7px
+}
+input[type="checkbox"]:checked + label:before {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+  border: 1px solid #fff;
+  min-width: 20px;
+  min-height: 20px;
+  margin-top: 7px
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+.popup-fade {
+  display: none;
+}
+
+.popup-fade:before {
+  content: '';
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  width: 360px;
+  margin-left: -200px;
+  background: #fff;
+  border: 1px solid orange;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

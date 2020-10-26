@@ -36,6 +36,58 @@ tabs('.js-tab-main-block', '.tab-js-title', '.defect-tabs__block', 1);
 //menu
 tabs('.js-tab-main-block', '.tab-js-title', '.menu-mobile-block__item');
 
+/* modal popup */
+
+
+const popups = (classToNumberOpen, numberOfPopup) => {
+  const popupOpen = document.querySelectorAll(classToNumberOpen),
+        popupClose = document.querySelector(`${numberOfPopup} .popup-close`),
+        popupShadow = document.querySelector(numberOfPopup),
+        editTitle = document.querySelector(`${numberOfPopup} .popup-edit`);
+
+popupOpen.forEach((el, i, h) => {
+  //close all
+  const closeIt = () => {
+    document.querySelector('body').style.overflow = 'initial';
+    popupShadow.style.display = 'none';
+  };
+
+  el.addEventListener('click', e => {
+  //убираю прокрутку
+  document.querySelector('body').style.overflow = 'hidden';
+  popupShadow.style.display = 'flex';
+  //here write a content in a title
+  const titleContent = el.dataset.popupContent;
+  if (titleContent) {
+    editTitle.textContent = titleContent;
+  } else {
+    editTitle.textContent = 'обратный звонок';
+  }
+
+  //on click to close
+  popupClose.addEventListener('click', e => {
+    closeIt();
+  });
+  //on click on esc
+  const closeESC = window.addEventListener('keyup', e => {
+    if (e.code == 'Escape') {
+      closeIt();
+      window.removeEventListener('keyup', closeESC);
+    }
+  });
+});
+});
+};
+// 1 - class to open popup
+// 2 - number of popup in HTML
+popups('.popup-open', '.popup-number-1');
+popups('.popup-open-2', '.popup-number-2');
+
+  
+
+
+
+
 /*
 var div = document.querySelector("#too"); //Это элемент от которого мы начнем поиск
 

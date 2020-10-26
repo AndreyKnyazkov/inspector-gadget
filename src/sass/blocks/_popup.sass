@@ -1,0 +1,104 @@
+.modal
+  &-block
+    border-radius: 40px 0px 40px 40px
+    background: linear-gradient(180deg, #4B5DFF 0%, #4B93FF 100%)
+    width: 450px
+    padding: 74px 64px
+    color: #fff
+    &_form
+      &-information
+        margin-bottom: 3px
+        &__content
+          margin-bottom: 14px
+    &_close
+      transform: translate(-11px, 10px)
+    &_form
+      &-information
+        text-align: center
+        &__title
+          +Bold
+          font-size: 38px
+        &__content
+          font-size: 16px
+          padding-top: 12px
+          line-height: 23px
+      &_form
+        display: flex
+        flex-direction: column
+        input
+          +Bold
+          margin-top: 20px
+          width: 100%
+          padding-top: 16px
+          padding-bottom: 22px
+          border-radius: 30px 0px 30px 30px
+          border: 1px solid rgba(255, 255, 255, 0.5)
+          background: none
+          font-size: 14px
+          text-align: center
+          color: #fff
+          transform: translate(0px, -10px)
+          &::placeholder
+            +Reg
+            font-size: 14px
+            text-align: center
+            color: rgba(255, 255, 255, 0.5)
+          &:focus
+            border: 1px solid #FFFFFF
+        &_button
+          +Bold
+          margin-top: 10px
+          cursor: pointer
+          padding: 15px 0px 22px 0px
+          background: #FFFFFF
+          border-radius: 30px 0px 30px 30px
+          font-size: 14px
+          text-align: center
+          color: #4B5DFF
+        &_checkbox
+          display: flex
+          align-items: flex-end
+          font-size: 14px
+          margin-top: 27px
+          &__block
+            line-height: 26px
+            margin-left: 18px
+          input
+            margin-left: 15px
+            width: 0px
+            border: 1px solid #fff
+            display: flex
+          label
+            display: flex
+@media ( max-width: 768px )
+  .modal
+    &-block
+      width: 400px
+      padding: 61px 46px
+      &_form
+        &-information
+          &__title
+            font-size: 36px
+          &__content
+            font-size: 14px
+        &_form
+          &_checkbox
+            input
+              margin-left: 0
+@media ( max-width: 768px )
+  .modal
+    &-block
+      width: 95%
+      padding: 56px 38px
+      &_close
+        img
+          width: 14px
+      &_form
+        &_form
+          input
+            margin-top: 15px
+          &_button
+            margin-top: 5px
+        &-information
+          &__title
+            font-size: 30px
